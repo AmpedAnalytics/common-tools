@@ -15,7 +15,7 @@ from outage_scripts import (
 def get_coal_outages():
 
     output_path = os.path.realpath(os.path.join(__file__,"../../../OUTPUT/"))
-    data_path = os.path.realpath(os.path.join(__file__,"../../../data/"))
+    data_path = os.path.realpath(os.path.join(__file__,"../../../../data/"))
 
 
     # DUIDs for queries and matching other information
@@ -204,7 +204,7 @@ def get_coal_outages():
         
     # save report
     file_name = f"outages_{today:%Y%m%d}.xlsx"
-    excel_workbook.save(os.path.join("./OUTPUT/COAL/", file_name))
+    excel_workbook.save(os.path.join(os.path.join(output_path,"COAL/"), file_name))
     #excel_workbook.save(os.path.join(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'OUTPUT', 'COAL')), file_name))
     
     print("Writing report to file ... complete.")

@@ -12,7 +12,7 @@ import argparse
 import textwrap
 
 parent = os.path.realpath(os.path.join(__file__,"../../../"))
-data_path = os.path.realpath(os.path.join(__file__,"../../../data/"))
+data_path = os.path.realpath(os.path.join(__file__,"../../../../data/"))
 output_path = os.path.realpath(os.path.join(__file__,"../../../OUTPUT/ELECTRICITY/"))
 
 def workbook_history(arx_path = os.path.join(parent,"archive/")):

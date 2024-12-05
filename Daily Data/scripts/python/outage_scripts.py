@@ -3,6 +3,9 @@ import os
 import pandas as pd
 import pymssql
 
+datap = os.path.abspath(os.path.join(__file__,"../../../../data/"))
+scriptp = os.path.abspath(os.path.join(__file__,"../../../scripts/"))
+
 
 def get_coal_availability(duids, start_date):
     '''Collects MTPASA availabilty for all coal units for coming 7 days.
@@ -27,7 +30,7 @@ def get_coal_availability(duids, start_date):
             end_date = start_date + pd.DateOffset(days=6)
                               
             # load query
-            with open("./scripts/sql/mtpasa_availability.sql", "r") as file:
+            with open(os.path.join(scriptp,"sql/mtpasa_availability.sql"), "r") as file:
             #with open(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sql','mtpasa_availability.sql')), "r") as file: #
                 sql_query = file.read()
 
@@ -142,7 +145,7 @@ def get_outage_data(duids, day):
             duid_list = "', '".join(duids)
                                 
             # load query
-            with open("./scripts/sql/coal_outages.sql", "r") as file:
+            with open(os.path.join(scriptp,"sql/coal_outages.sql"), "r") as file:
             #with open(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sql','coal_outages.sql')), "r") as file:
                 sql_query = file.read()
 
@@ -184,7 +187,7 @@ def get_geninfo(duids):
     '''Load the latest gen info (coal unit names and capacities).'''
     
     # check for latest gen info file
-    file_path = "./data/geninfo/"
+    file_path = os.path.join(datap,"geninfo/")
     #file_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'data','geninfo')) ##
     geninfo_files = [file for file in os.listdir(file_path) if "geninfo" in file]
     geninfo_files.sort()

@@ -9,7 +9,9 @@ import re
 from pandas.testing import assert_frame_equal
 from pandas._libs.tslibs.parsing import DateParseError
 
-datap =  path.abspath(path.join(__file__,"../../../data/"))
+datap =  path.abspath(path.join(__file__,"../../../../data/"))
+scriptp =  path.abspath(path.join(__file__,"../../../scripts/"))
+
 
 # change to pymssql
 def get_nem_price_and_demand(location,start_date):
@@ -27,7 +29,7 @@ def get_nem_price_and_demand(location,start_date):
     cursor = connection.cursor()
 
     # load SQL query
-    with open(path.join(datap,"../scripts/sql/get_price_and_demand.sql"), "r") as sql_file:
+    with open(path.join(scriptp,"sql/get_price_and_demand.sql"), "r") as sql_file:
         sql_query = sql_file.read()
     
     # fetch data into a list of tuples

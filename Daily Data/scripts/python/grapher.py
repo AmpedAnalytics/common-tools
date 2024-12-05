@@ -15,7 +15,7 @@ class HandlerSquare(HandlerPatch):
         p.set_transform(trans)
         return [p]      
 
-def graph_aemo_reserves(demand=os.path.realpath(os.path.join(__file__,"../../../data/demand.csv")),reserves=os.path.realpath(os.path.join(__file__,"../../../data/reserves.csv"))):
+def graph_aemo_reserves(demand=os.path.realpath(os.path.join(__file__,"../../../../data/demand.csv")),reserves=os.path.realpath(os.path.join(__file__,"../../../../data/reserves.csv"))):
     # Set initial parameters
     plt.rcParams["hatch.linewidth"] = 1
     plt.rcParams["text.color"] = "#808080"
