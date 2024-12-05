@@ -1,0 +1,21 @@
+Right-click on any white space in Daily Data 4.2 (except for on a folder or file) and click `Open in Terminal'.
+
+Copy the below command into the Terminal and press enter (see screenshot `HowToRunDD.png' if unclear).
+
+------------------------------
+
+python scripts\python\main.py
+
+------------------------------
+
+If it doesn't run, type this into the Terminal and press enter.
+
+--------------------------------
+
+pip install -r requirements.txt 
+
+--------------------------------
+
+Wait until all the packages finish downloading. 
+
+Check that you have python installed.
