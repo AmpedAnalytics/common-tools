@@ -45,50 +45,66 @@ def get_coal_outages():
         today
     )
 
-    # TEST
-    # outage_data.to_csv(os.path.join(data_path,"outage_data_example.csv"))
+    df_map = pd.read_csv(os.path.join(data_path,"./duid_map_july_2024.csv"))
+    dfmap = df_map.to_dict()
+    df_map = dict(zip(dfmap['DUID'].values(),dfmap['REGION'].values()))
 
-    # identify units that are out on day of reporting
-    # include any DUID listed with 'M'
-    current_duids = outage_data[outage_data["current_status"] == "ONGOING"].index
-    returning_duids = outage_data[outage_data["current_status"] == "RETURNING"].index
-    # coal outage classified as 'New' not 'Existing' if outage started after yesterday at 10 am
-    outage_starts = outage_data["outage_start"].to_list()
-    new_duids = [outage_data.index[i] for i in range(len(outage_data.index)) if pd.Timestamp(outage_starts[i]) >= today - pd.DateOffset(hours=14)]
+    outage_data['Region'] = outage_data.index.map(df_map)
 
-    # prepare current outages table
-    current_outages = pd.DataFrame(
-        columns=["name", "capacity", "outage_type", "outage_date", "existing", "expected_return"],
-        index=current_duids
-    )
-    current_outages.index.name = "duid"
+    # outage_by_region = # Group by 'Region' and create separate DataFrames
+    dfs = {key: group for key, group in outage_data.groupby('Region')}
 
-    # prepare return-to-service table
-    return_to_service = pd.DataFrame(
-        columns=["name", "capacity", "outage_date", "days_unavailable"],
-        index=returning_duids
-    )
-    return_to_service.index.name = "duid"
+    print(dfs)
+
+    
+    def process_info(outage_data):
+        # identify units that are out on day of reporting
+        # include any DUID listed with 'M'
+        current_duids = outage_data[outage_data["current_status"] == "ONGOING"].index
+        returning_duids = outage_data[outage_data["current_status"] == "RETURNING"].index
+        # coal outage classified as 'New' not 'Existing' if outage started after yesterday at 10 am
+        outage_starts = outage_data["outage_start"].to_list()
+        new_duids = [outage_data.index[i] for i in range(len(outage_data.index)) if pd.Timestamp(outage_starts[i]) >= today - pd.DateOffset(hours=14)]
+
+        # prepare current outages table
+        current_outages = pd.DataFrame(
+            columns=["name", "capacity", "outage_type", "outage_date", "existing", "expected_return"],
+            index=current_duids
+        )
+        current_outages.index.name = "duid"
+
+        # prepare return-to-service table
+        return_to_service = pd.DataFrame(
+            columns=["name", "capacity", "outage_date", "days_unavailable"],
+            index=returning_duids
+        )
+        return_to_service.index.name = "duid"
+
+        # populate tables
+
+        # gather basic outage info
+        for duid in current_outages.index:
+            name = geninfo.at[duid, "name"]
+            capacity = geninfo.at[duid, "capacity"]
+            outage_start = pd.to_datetime(outage_data.at[duid, "outage_start"]).date()
+            expected_return = pd.to_datetime(outage_data.at[duid, "expected_return"]).date()
+            existing = False if duid in new_duids else True
+            current_outages.loc[duid] = [name, capacity, pd.NA, outage_start, existing, expected_return]
+        for duid in return_to_service.index:
+            name = geninfo.at[duid, "name"]
+            capacity = geninfo.at[duid, "capacity"]
+            days_unavailable = (outage_data.at[duid, "outage_end"] - outage_data.at[duid, "outage_start"]).days + 1
+            outage_start = outage_data.at[duid, "outage_start"].date()
+            return_to_service.loc[duid] = [name, capacity, outage_start, days_unavailable]
+
+        return current_duids, new_duids, returning_duids, current_outages, return_to_service
+
+    current_duids, new_duids, returning_duids, current_outages, return_to_service = process_info(outage_data)
 
     # summarise outages
     print(f"{len(current_duids):,.0f} coal unit{' is' if len(current_duids) == 1 else 's are'} currently out.")
     print(f"{len(new_duids):,.0f} of these {'is a' if len(new_duids) == 1 else 'are'} new outage{'' if len(new_duids) == 1 else 's'}.")
     print(f"{len(returning_duids):,.0f} coal unit{' has' if len(returning_duids) == 1 else 's have'} returned to service today.\n")
-
-    # gather basic outage info
-    for duid in current_outages.index:
-        name = geninfo.at[duid, "name"]
-        capacity = geninfo.at[duid, "capacity"]
-        outage_start = outage_data.at[duid, "outage_start"].date()
-        expected_return = outage_data.at[duid, "expected_return"].date()
-        existing = False if duid in new_duids else True
-        current_outages.loc[duid] = [name, capacity, pd.NA, outage_start, existing, expected_return]
-    for duid in return_to_service.index:
-        name = geninfo.at[duid, "name"]
-        capacity = geninfo.at[duid, "capacity"]
-        days_unavailable = (outage_data.at[duid, "outage_end"] - outage_data.at[duid, "outage_start"]).days + 1
-        outage_start = outage_data.at[duid, "outage_start"].date()
-        return_to_service.loc[duid] = [name, capacity, outage_start, days_unavailable]
 
     # iterate through DUIDs and diagnose each outage
     print("Diagnosing outages ...")
@@ -130,6 +146,9 @@ def get_coal_outages():
         column_letter = chr(ord("B") + i)
         worksheet[f"{column_letter}4"] = f"{indice:%#d %b %Y}"
         worksheet[f"{column_letter}5"] = int(forecast_outages.at[indice, 'total outages'])
+
+
+    #!!! --- CHANGED THIS SECTION BELOW --- !!!#
 
     # complete table 2
     worksheet["B8"] = f"Coal units detected generating no power on {today:%#d %B %Y}:"
@@ -177,6 +196,8 @@ def get_coal_outages():
     worksheet[f"D{return_to_service_row - 6}"] = current_outages[current_outages["outage_type"] == "Unclear"]["capacity"].sum()
     # total outages
     worksheet[f"D{return_to_service_row - 5}"] = current_outages["capacity"].sum()
+
+     #!!! ---        --- !!!#
 
     # complete table 3
     worksheet[f"B{return_to_service_row - 2}"] = f"Coal units returning to service after being offline on {today - pd.DateOffset(days=1):%#d %B %Y}:"
