@@ -47,20 +47,22 @@ def get_coal_outages():
         today + pd.DateOffset(days=1)
     )
 
+    mtpasa['DAY'] = pd.to_datetime(mtpasa['DAY'])
+
     outage_data = get_outage_data(
         coal_duids,
         today
     )
 
+    mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"))
+    outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
+
     # ### DEBGUG START
     
     # Comment above and uncomment below for debugging
 
-    mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"))
-    outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
-
     # mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),index_col=0,parse_dates=['DAY'])
-    # outage_data = pd.read_csv(os.path.join(data_path,"outage_data_example.csv"),index_col=0,parse_dates=[
+    # outage_data = pd.read_csv(os.path.join(data_path,"outage_example.csv"),index_col=0,parse_dates=[
     #               'outage_start','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
     
     ### DEBUG END
@@ -160,7 +162,7 @@ def get_coal_outages():
     worksheet["B8"] = f"Coal units detected generating no power on {today:%#d %B %Y}:"
     
     # create map of DUID -> REGION
-    df_map = pd.read_csv(os.path.join(data_path,"./duid_map_july_2024.csv"))
+    df_map = pd.read_csv(os.path.join(data_path,"duid_map_july_2024.csv"))
     dfmap = df_map.to_dict()
     df_map = dict(zip(dfmap['DUID'].values(),dfmap['REGION'].values()))
 
@@ -170,14 +172,10 @@ def get_coal_outages():
     # outage_by_region = # Group by 'Region' and create separate DataFrames
     outage_region_data = {key: group for key, group in outage_data.groupby('Region')}
 
-    print(outage_region_data)
-
     # table starts on row 10
     row_no = 10
     for _ in range(5):
         region = worksheet[f"B{row_no}"].value
-
-        print(region,row_no)
 
         if region in outage_region_data.keys():
             current_duids, _, _, current_outages, return_to_service = process_info(outage_region_data[region])
@@ -305,55 +303,109 @@ def get_coal_outages():
     print("Writing report to file ... complete.")
     print(f"{file_name} saved.")
 
+    current_outages['region'] = current_outages.index.map(df_map)
+
     current_outages.to_csv(os.path.join(data_path,"current_outages.csv"))
 
-    return current_outages.copy()
+    def get_future_planned(dfcp):
+        '''
+        feed in mtpasa df
+        '''
+        df = dfcp.copy()
+        df = df[df['PASAAVAILABILITY']==0]
 
-df = get_coal_outages()
+        df["consecutive_outage"] = df.groupby("DUID")["DAY"].diff().dt.days.ne(1).cumsum()
+
+        df = df.groupby(["DUID", "consecutive_outage"]).agg(
+                        start_date=("DAY", "min"),
+                        end_date=("DAY", "max")).reset_index(drop=False)
+
+        df['region'] = df['DUID'].map(df_map)
+        df['outage_type'] = 'Planned' 
+        df = df[['DUID','region','start_date','end_date','outage_type']]
+
+        df.columns = ['duid','region','outage_date','expected_return','outage_type']
+
+        return df.copy()
+    
+    future_planned_outages = get_future_planned(mtpasa)
+
+    outcp = current_outages.copy()
+    outcp.reset_index(inplace=True)
+    outcp = outcp[['duid','region','outage_date','expected_return','outage_type']]
+
+    outcp['outage_date'] = pd.to_datetime(outcp['outage_date'])
+    outcp['expected_return'] = pd.to_datetime(outcp['expected_return'])
+
+    all_outages = pd.concat([outcp,future_planned_outages],axis=0).reset_index(drop=True)
+    
+    return all_outages #all_outages.copy()
+
+all_out = get_coal_outages()
 
 def visualise_outages(df):
     plt.rcParams["font.family"] = "Times New Roman"
 
-    # Example DataFrame
-    # data = {
-    #     "Generator": ["Kogan Creek", "Eraring", "Liddell", "Callide C", "Torrens Island", "Pelican Point"],
-    #     "Region": ["QLD", "NSW", "NSW", "QLD", "SA", "SA"],
-    #     "Start Date": pd.to_datetime(["2025-02-02", "2025-02-05", "2025-02-10", "2025-02-15", "2025-02-05", "2025-02-25"]),
-    #     "End Date": pd.to_datetime(["2025-02-10", "2025-02-15", "2025-02-20", "2025-02-25", "2025-03-01", "2025-03-05"]),
-    #     "Type": ["Planned", "Unplanned", "Planned", "Unplanned", "Planned", "Unplanned"]
-    # }
-
-    # df = pd.DataFrame(data)
+    today = pd.to_datetime("today").date()
 
     # Sort by region first, then by start date
-    df.sort_values(by=["Region", "outage_start"], inplace=True)
+    df.sort_values(by=["region", "outage_date", "duid"], inplace=True)
+
+    df_len = len(df)
 
     # Assign unique indices for better region separation
-    df["y_pos"] = range(len(df))
+    df["y_pos"] = range(df_len)
+
+    fs = (12,3)
+
+    dayticks=1
+
+    if df_len < 2:
+        fs = (12,2)
+
+    if df_len < 4:
+        fs = (12,3)
+
+    if df_len >= 5:
+        fs = (12,4)
+
+    if df_len > 10:
+        fs = (12,5)
+
+    daterange = (df.expected_return.max() - df.outage_date.min()).days
+
+    if daterange < 7:
+        dayticks = 2
+    if daterange < 14:
+        dayticks = 3
+    if daterange < 21:
+        dayticks = 4
+    else:
+        dayticks = 7
 
     # Set up the figure
-    plt.figure(figsize=(12, 4))
+    plt.figure(figsize=fs)
     ax = plt.gca()
 
     # Define colors by region
-    palette = sns.color_palette("Set2", n_colors=df["Region"].nunique())
-    region_colors = dict(zip(df["Region"].unique(), palette))
+    palette = sns.color_palette("Set2", n_colors=df["region"].nunique())
+    region_colors = dict(zip(df["region"].unique(), palette))
 
     # Plot horizontal bars with start and end dates, thinner bars
-    for i, row in df.iterrows():
+    for _, row in df.iterrows():
         ax.barh(
             y=row["y_pos"], 
-            width=(row["expected_return"] - row["outage_start"]).days, 
-            left=row["outage_start"], 
+            width=(row["expected_return"] - row["outage_date"]).days, 
+            left=row["outage_date"], 
             height=0.6,  # Reduced bar height for closer spacing
-            color=region_colors[row["Region"]],
+            color=region_colors[row["region"]],
             edgecolor="black"
         )
         # Add labels inside the bars
         ax.text(
-            row["outage_start"] + (row["expected_return"] - row["outage_start"]) / 2,  # Center label
+            row["outage_date"] + (row["expected_return"] - row["outage_date"]) / 2,  # Center label
             row["y_pos"],
-            f"{row['duid']} ({row['Type']})",
+            f"{row['duid']} ({row['outage_type']})",
             va="center",
             ha="center",
             fontsize=10,
@@ -362,12 +414,13 @@ def visualise_outages(df):
         )
 
     # Add dashed separators between regions
-    region_breaks = df.groupby("Region")["y_pos"].last().values[:-1]  # Get last index of each region
+    region_breaks = df.groupby("region")["y_pos"].last().values[:-1]  # Get last index of each region
     for y in region_breaks:
         ax.axhline(y=y + 0.5, color="black", linestyle="dashed", linewidth=1.2)
 
     # Format x-axis as dates
-    ax.xaxis.set_major_locator(mdates.DayLocator(interval=5))  # Major ticks every 5 days
+    ax.set_xlim(df.outage_date.min()-pd.Timedelta(days=1),df.expected_return.max()+pd.Timedelta(days=1))
+    ax.xaxis.set_major_locator(mdates.DayLocator(interval=dayticks))  # Major ticks every 5 days
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))  # Format as YYYY-MM-DD
     plt.xticks(rotation=30, ha="right", fontsize=10)  # Rotate for readability
 
@@ -377,11 +430,17 @@ def visualise_outages(df):
 
     # Labels and title
     plt.xlabel("Date", fontsize=12)
-    plt.title("Generator Outages by Region", fontsize=14, fontweight="bold")
+    plt.title(f"Coal Outages on {today:%d %B %Y}", fontsize=14, fontweight="bold")
 
     # Legend
     handles = [plt.Line2D([0], [0], color=color, lw=6) for color in region_colors.values()]
-    plt.legend(handles, region_colors.keys(), title="Region", bbox_to_anchor=(0.01, 1), loc="upper left")
+    plt.legend(handles, region_colors.keys(), title="Region", bbox_to_anchor=(-0.105, 1), loc="upper left")
 
     plt.grid(axis="x", linestyle="--", alpha=0.5)
-    plt.show()
+    # plt.show()
+
+    plt.tight_layout()
+    plt.subplots_adjust(left=0.11) 
+    plt.savefig("./outage.png",dpi=200)
+
+visualise_outages(all_out)
