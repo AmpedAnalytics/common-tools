@@ -1,8 +1,12 @@
 # import dependencies
 from copy import copy
 from openpyxl import load_workbook
+from openpyxl.styles.borders import Border, Side
 import os
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 # import local scripts
 from outage_scripts import (
@@ -35,6 +39,9 @@ def get_coal_outages():
     # run SQL functions
     today = pd.to_datetime("today").date()
 
+    # ! test a different day !
+    # today = pd.to_datetime("2024-10-16").date()
+
     mtpasa = get_coal_availability(
         coal_duids,
         today + pd.DateOffset(days=1)
@@ -45,18 +52,19 @@ def get_coal_outages():
         today
     )
 
-    df_map = pd.read_csv(os.path.join(data_path,"./duid_map_july_2024.csv"))
-    dfmap = df_map.to_dict()
-    df_map = dict(zip(dfmap['DUID'].values(),dfmap['REGION'].values()))
-
-    outage_data['Region'] = outage_data.index.map(df_map)
-
-    # outage_by_region = # Group by 'Region' and create separate DataFrames
-    dfs = {key: group for key, group in outage_data.groupby('Region')}
-
-    print(dfs)
-
+    # ### DEBGUG START
     
+    # Comment above and uncomment below for debugging
+
+    mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"))
+    outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
+
+    # mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),index_col=0,parse_dates=['DAY'])
+    # outage_data = pd.read_csv(os.path.join(data_path,"outage_data_example.csv"),index_col=0,parse_dates=[
+    #               'outage_start','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
+    
+    ### DEBUG END
+
     def process_info(outage_data):
         # identify units that are out on day of reporting
         # include any DUID listed with 'M'
@@ -135,7 +143,8 @@ def get_coal_outages():
     # load report template
     print("\nWriting report to file ...", end="\r")
 
-    template_name = "outage_report_template.xlsx"
+    # template_name = "outage_report_template.xlsx"
+    template_name = "outage_report_template_v3.xlsx"
     excel_workbook = load_workbook(os.path.join(data_path, template_name))
     worksheet = excel_workbook.active
 
@@ -147,60 +156,126 @@ def get_coal_outages():
         worksheet[f"{column_letter}4"] = f"{indice:%#d %b %Y}"
         worksheet[f"{column_letter}5"] = int(forecast_outages.at[indice, 'total outages'])
 
-
-    #!!! --- CHANGED THIS SECTION BELOW --- !!!#
-
     # complete table 2
     worksheet["B8"] = f"Coal units detected generating no power on {today:%#d %B %Y}:"
-    # sort outages by new first, then name
-    current_outages.sort_values(["existing", "name"], inplace=True)
-    # fill in table
-    for i, duid in enumerate(current_outages.index):
-        row_no = 10 + i
-        # insert line if required
-        if row_no > 10:
-            worksheet.insert_rows(row_no)
-            worksheet.row_dimensions[row_no].height = worksheet.row_dimensions[10].height
-            # copy style/formatting to new cells
-            for col in range(7):
-                column = chr(ord("B") + col)
-                target_cell = worksheet[f"{column}{row_no}"]
-                source_cell = worksheet[f"{column}10"]
-                target_cell.font = copy(source_cell.font)
-                target_cell.border = copy(source_cell.border)
-                target_cell.fill = copy(source_cell.fill)
-                target_cell.number_format = copy(source_cell.number_format)
-                target_cell.alignment = copy(source_cell.alignment)
-        # insert data into cells
-        outage_date = current_outages.at[duid, "outage_date"]
-        existing = current_outages.at[duid, "existing"]
-        outage_type = current_outages.at[duid, "outage_type"]
-        outage_days = (today - outage_date).days
-        return_date = current_outages.at[duid, "expected_return"]
-        if (return_date < today) | ((not existing) & (return_date == today)):
-            return_date = "Unknown"        
-        worksheet[f"B{row_no}"] = geninfo.at[duid, "name"]
-        worksheet[f"C{row_no}"] = "Existing" if current_outages.at[duid, "existing"] else "New"
-        worksheet[f"D{row_no}"] = int(geninfo.at[duid, "capacity"])
-        worksheet[f"E{row_no}"] = outage_type
-        worksheet[f"F{row_no}"] = outage_days if outage_days > 0 else "New outage"
-        worksheet[f"G{row_no}"] = return_date
-        worksheet[f"H{row_no}"] = "Unknown" if return_date == "Unknown" else (return_date - today).days
-    # fill in today's total outages
-    return_to_service_row = 18 + max(1, len(current_duids))
-    # total planned
-    worksheet[f"D{return_to_service_row - 8}"] = current_outages[current_outages["outage_type"] == "Planned"]["capacity"].sum()
-    # total unplanned
-    worksheet[f"D{return_to_service_row - 7}"] = current_outages[current_outages["outage_type"] == "Unplanned"]["capacity"].sum()
-    # total unclear
-    worksheet[f"D{return_to_service_row - 6}"] = current_outages[current_outages["outage_type"] == "Unclear"]["capacity"].sum()
-    # total outages
-    worksheet[f"D{return_to_service_row - 5}"] = current_outages["capacity"].sum()
+    
+    # create map of DUID -> REGION
+    df_map = pd.read_csv(os.path.join(data_path,"./duid_map_july_2024.csv"))
+    dfmap = df_map.to_dict()
+    df_map = dict(zip(dfmap['DUID'].values(),dfmap['REGION'].values()))
 
-     #!!! ---        --- !!!#
+    # add region column
+    outage_data['Region'] = outage_data.index.map(df_map)
+
+    # outage_by_region = # Group by 'Region' and create separate DataFrames
+    outage_region_data = {key: group for key, group in outage_data.groupby('Region')}
+
+    print(outage_region_data)
+
+    # table starts on row 10
+    row_no = 10
+    for _ in range(5):
+        region = worksheet[f"B{row_no}"].value
+
+        print(region,row_no)
+
+        if region in outage_region_data.keys():
+            current_duids, _, _, current_outages, return_to_service = process_info(outage_region_data[region])
+
+            for duid in current_duids:
+                outage_type = diagnose_outage(duid, outage_data)
+                current_outages.at[duid, "outage_type"] = outage_type
+
+            # sort outages by new first, then name
+            current_outages.sort_values(["existing", "name"], inplace=True)
+
+            # Loop through 
+            row_no += 1
+
+            # write to workbook
+            for duid in current_outages.index:
+                # insert line if required
+                if row_no > 10:
+                    worksheet.insert_rows(row_no)
+                    worksheet.row_dimensions[row_no].height = worksheet.row_dimensions[10].height
+                    # copy style/formatting to new cells
+                    for col in range(8):
+                        column = chr(ord("B") + col)
+                        target_cell = worksheet[f"{column}{row_no}"]
+                        source_cell = worksheet[f"{column}10"]
+                        target_cell.font = copy(source_cell.font)
+                        target_cell.border = copy(source_cell.border)
+                        target_cell.fill = copy(source_cell.fill)
+                        target_cell.number_format = copy(source_cell.number_format)
+                        target_cell.alignment = copy(source_cell.alignment)
+                # insert data into cells
+                outage_date = current_outages.at[duid, "outage_date"]
+                existing = current_outages.at[duid, "existing"]
+                outage_type = current_outages.at[duid, "outage_type"]
+                outage_days = (today - outage_date).days
+                return_date = current_outages.at[duid, "expected_return"]
+
+                if (return_date < today) | ((not existing) & (return_date == today)):
+                    return_date = "Unknown"        
+                worksheet[f"C{row_no}"] = geninfo.at[duid, "name"]
+                worksheet[f"D{row_no}"] = "Existing" if current_outages.at[duid, "existing"] else "New"
+                worksheet[f"E{row_no}"] = int(geninfo.at[duid, "capacity"])
+                worksheet[f"F{row_no}"] = outage_type
+                worksheet[f"G{row_no}"] = outage_days if outage_days > 0 else "New outage"
+                worksheet[f"H{row_no}"] = return_date
+                worksheet[f"I{row_no}"] = "Unknown" if return_date == "Unknown" else (return_date - today).days
+
+                # make room for another duid
+                row_no += 1
+        else:
+            # go to next region
+            worksheet.delete_rows(row_no)
+
+    thin_border = Border(
+                top=Side(style='thin'), 
+                bottom=Side(style='thin'))
+    left_border = Border(
+                left=Side(style='thin'),
+                top=Side(style='thin'), 
+                bottom=Side(style='thin'))
+    right_border = Border(
+                right=Side(style='thin'),
+                top=Side(style='thin'), 
+                bottom=Side(style='thin'))
+    
+    last_no = row_no - 1
+    for col in range(8):
+        column = chr(ord("B") + col)
+        target_cell = worksheet[f"{column}{last_no}"]
+        source_cell = worksheet[f"{column}10"]
+        if col==0:
+            target_cell.border = left_border
+        elif col==7:
+            target_cell.border = right_border
+        else:
+            target_cell.border = thin_border
+
+    current_duids,_,_,current_outages,return_to_service = process_info(outage_data)
+
+    for duid in current_duids:
+        outage_type = diagnose_outage(duid, outage_data)
+        current_outages.at[duid, "outage_type"] = outage_type
+
+    # fill in today's total outages
+    summary_row = row_no
+    # total planned
+    worksheet[f"D{summary_row}"] = current_outages[current_outages["outage_type"] == "Planned"]["capacity"].sum()
+    # total unplanned
+    worksheet[f"D{summary_row + 1}"] = current_outages[current_outages["outage_type"] == "Unplanned"]["capacity"].sum()
+    # total unclear
+    worksheet[f"D{summary_row + 2}"] = current_outages[current_outages["outage_type"] == "Unclear"]["capacity"].sum()
+    # total outages
+    worksheet[f"D{summary_row + 3}"] = current_outages["capacity"].sum()
+
+    return_to_service_row = summary_row + 6
 
     # complete table 3
-    worksheet[f"B{return_to_service_row - 2}"] = f"Coal units returning to service after being offline on {today - pd.DateOffset(days=1):%#d %B %Y}:"
+    worksheet[f"B{return_to_service_row}"] = f"Coal units returning to service after being offline on {today - pd.DateOffset(days=1):%#d %B %Y}:"
     # fill in table
     for i, duid in enumerate(return_to_service.index):
         row_no = return_to_service_row + i
@@ -226,7 +301,87 @@ def get_coal_outages():
     # save report
     file_name = f"outages_{today:%Y%m%d}.xlsx"
     excel_workbook.save(os.path.join(os.path.join(output_path,"COAL/"), file_name))
-    #excel_workbook.save(os.path.join(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'OUTPUT', 'COAL')), file_name))
     
     print("Writing report to file ... complete.")
     print(f"{file_name} saved.")
+
+    current_outages.to_csv(os.path.join(data_path,"current_outages.csv"))
+
+    return current_outages.copy()
+
+df = get_coal_outages()
+
+def visualise_outages(df):
+    plt.rcParams["font.family"] = "Times New Roman"
+
+    # Example DataFrame
+    # data = {
+    #     "Generator": ["Kogan Creek", "Eraring", "Liddell", "Callide C", "Torrens Island", "Pelican Point"],
+    #     "Region": ["QLD", "NSW", "NSW", "QLD", "SA", "SA"],
+    #     "Start Date": pd.to_datetime(["2025-02-02", "2025-02-05", "2025-02-10", "2025-02-15", "2025-02-05", "2025-02-25"]),
+    #     "End Date": pd.to_datetime(["2025-02-10", "2025-02-15", "2025-02-20", "2025-02-25", "2025-03-01", "2025-03-05"]),
+    #     "Type": ["Planned", "Unplanned", "Planned", "Unplanned", "Planned", "Unplanned"]
+    # }
+
+    # df = pd.DataFrame(data)
+
+    # Sort by region first, then by start date
+    df.sort_values(by=["Region", "outage_start"], inplace=True)
+
+    # Assign unique indices for better region separation
+    df["y_pos"] = range(len(df))
+
+    # Set up the figure
+    plt.figure(figsize=(12, 4))
+    ax = plt.gca()
+
+    # Define colors by region
+    palette = sns.color_palette("Set2", n_colors=df["Region"].nunique())
+    region_colors = dict(zip(df["Region"].unique(), palette))
+
+    # Plot horizontal bars with start and end dates, thinner bars
+    for i, row in df.iterrows():
+        ax.barh(
+            y=row["y_pos"], 
+            width=(row["expected_return"] - row["outage_start"]).days, 
+            left=row["outage_start"], 
+            height=0.6,  # Reduced bar height for closer spacing
+            color=region_colors[row["Region"]],
+            edgecolor="black"
+        )
+        # Add labels inside the bars
+        ax.text(
+            row["outage_start"] + (row["expected_return"] - row["outage_start"]) / 2,  # Center label
+            row["y_pos"],
+            f"{row['duid']} ({row['Type']})",
+            va="center",
+            ha="center",
+            fontsize=10,
+            color="black",
+            fontweight="bold"
+        )
+
+    # Add dashed separators between regions
+    region_breaks = df.groupby("Region")["y_pos"].last().values[:-1]  # Get last index of each region
+    for y in region_breaks:
+        ax.axhline(y=y + 0.5, color="black", linestyle="dashed", linewidth=1.2)
+
+    # Format x-axis as dates
+    ax.xaxis.set_major_locator(mdates.DayLocator(interval=5))  # Major ticks every 5 days
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))  # Format as YYYY-MM-DD
+    plt.xticks(rotation=30, ha="right", fontsize=10)  # Rotate for readability
+
+    # Remove y-axis labels since bars are annotated
+    plt.yticks([])  
+    plt.ylabel("")
+
+    # Labels and title
+    plt.xlabel("Date", fontsize=12)
+    plt.title("Generator Outages by Region", fontsize=14, fontweight="bold")
+
+    # Legend
+    handles = [plt.Line2D([0], [0], color=color, lw=6) for color in region_colors.values()]
+    plt.legend(handles, region_colors.keys(), title="Region", bbox_to_anchor=(0.01, 1), loc="upper left")
+
+    plt.grid(axis="x", linestyle="--", alpha=0.5)
+    plt.show()
