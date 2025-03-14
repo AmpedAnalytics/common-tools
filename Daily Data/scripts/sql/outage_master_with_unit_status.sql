@@ -18,8 +18,8 @@
 *	capture such trips, since 16 MW will also report some 'false positives' for Stanwell.
 ****************************************************************************************************/
 DECLARE @STARTDATE DATETIME, @ENDDATE DATETIME;
-SET @STARTDATE = '01-Dec-2023'
-SET @ENDDATE = '21-May-2024'
+SET @STARTDATE = '{start_date}'
+SET @ENDDATE = '{end_date}'
 DECLARE @THRESHOLD FLOAT = 4.0
 DECLARE @TTHL_STAN FLOAT = 16.0
 
@@ -38,9 +38,9 @@ CoalUnits as (
 ****************************************************************************************************/
 	select distinct DUID, REGIONID, STATIONID
 	from DUDETAILSUMMARY
-	where DUID in ('BW01', 'BW02', 'BW03', 'BW04', 'CPP_3', 'CPP_4', 'ER01', 'ER02', 'ER03', 'ER04'
+	where DUID in ('BW01', 'BW02', 'BW03', 'BW04', 'CALL_B1', 'CALL_B2', 'CPP_3', 'CPP_4', 'ER01', 'ER02', 'ER03', 'ER04'
 					, 'GSTONE1', 'GSTONE2', 'GSTONE3', 'GSTONE4', 'GSTONE5', 'GSTONE6', 'KPP_1'
-					, 'LD01', 'LD02', 'LD03', 'LD04', 'LOYYB1', 'LOYYB2', 'LYA1', 'LYA2', 'LYA3', 'LYA4'
+					, 'LOYYB1', 'LOYYB2', 'LYA1', 'LYA2', 'LYA3', 'LYA4'
 					, 'MP1', 'MP2', 'MPP_1', 'MPP_2', 'STAN-1', 'STAN-2', 'STAN-3', 'STAN-4'
 					, 'TARONG#1', 'TARONG#2', 'TARONG#3', 'TARONG#4', 'TNPS1', 'VP5', 'VP6'
 					, 'YWPS1', 'YWPS2', 'YWPS3', 'YWPS4')

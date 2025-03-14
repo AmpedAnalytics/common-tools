@@ -13,7 +13,8 @@ from outage_scripts import (
     get_coal_availability,
     diagnose_outage,
     get_outage_data,
-    get_geninfo
+    get_geninfo,
+    get_historic_outages
 )
 
 def get_coal_outages():
@@ -52,6 +53,11 @@ def get_coal_outages():
     outage_data = get_outage_data(
         coal_duids,
         today
+    )
+
+    historic_outages = get_historic_outages(
+        today,
+        lookback=15 # can change duration looking backwards
     )
 
     mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"))
@@ -337,7 +343,7 @@ def get_coal_outages():
     outcp['outage_date'] = pd.to_datetime(outcp['outage_date'])
     outcp['expected_return'] = pd.to_datetime(outcp['expected_return'])
 
-    all_outages = pd.concat([outcp,future_planned_outages],axis=0).reset_index(drop=True)
+    all_outages = pd.concat([outcp,future_planned_outages,historic_outages],axis=0).reset_index(drop=True)
     
     return all_outages #all_outages.copy()
 
@@ -430,7 +436,7 @@ def visualise_outages(df):
 
     # Labels and title
     plt.xlabel("Date", fontsize=12)
-    plt.title(f"Coal Outages on {today:%d %B %Y}", fontsize=14, fontweight="bold")
+    plt.title(f"Coal Outages (Updated on {today:%d %B %Y})", fontsize=14, fontweight="bold")
 
     # Legend
     handles = [plt.Line2D([0], [0], color=color, lw=6) for color in region_colors.values()]

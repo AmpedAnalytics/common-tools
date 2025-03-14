@@ -1,3 +1,3 @@
 duid,outage_start,outage_end,current_status,mw_5min_prev,actual_mw,target_mw,max_ramp_rate,registeredcapacity,bidofferdate,bidsettlementdate,rebidexplanation,rebid_category,os_pasaavail,os_pasaunitstate,latest_pasaavail,latest_pasaunitstate,expected_return,latest_offer_datetime
-GSTONE4,2025-03-13 23:20:00,,ONGOING,35.17773,0.00000,40.00000,57,280.0000,2025-03-13 23:14:07,2025-03-13,Unit commitment-Unit Offline revised-SL,P,280,NODERATINGS,280,NODERATINGS,2025-03-16,2025-03-12 15:51:23
-GSTONE5,2025-03-05 11:10:00,,ONGOING,14.81348,0.00000,0.00000,57,280.0000,2025-03-05 11:04:42,2025-03-05,Unit commitment-Rebid to match Scada-SL,P,280,NODERATINGS,240,DERATINGPLANBASIC,2025-03-16,2025-03-12 15:51:23
+GSTONE4,2025-03-13 23:20:00,,ONGOING,35.17773,0.00000,40.00000,57,280.0000,2025-03-13 23:14:07,2025-03-13,Unit commitment-Unit Offline revised-SL,P,280,NODERATINGS,280,NODERATINGS,2025-03-22,2025-03-14 12:01:19
+GSTONE5,2025-03-05 11:10:00,,ONGOING,14.81348,0.00000,0.00000,57,280.0000,2025-03-05 11:04:42,2025-03-05,Unit commitment-Rebid to match Scada-SL,P,280,NODERATINGS,240,DERATINGPLANBASIC,2025-03-16,2025-03-14 12:01:19

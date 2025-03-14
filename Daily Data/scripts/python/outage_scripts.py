@@ -28,7 +28,7 @@ def get_coal_availability(duids, start_date):
             # prepare arguments
             duid_list = "', '".join(duids)
             end_date = start_date + pd.DateOffset(days=6)
-                              
+  
             # load query
             with open(os.path.join(scriptp,"sql/mtpasa_availability.sql"), "r") as file:
             #with open(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sql','mtpasa_availability.sql')), "r") as file: #
@@ -208,3 +208,95 @@ def get_geninfo(duids):
     geninfo["name"] = geninfo.index.map(lambda duid: f"{geninfo.at[duid, 'name'].replace(' Power Station', '').replace(' Power Plant', '')} {duid[-1]}")
     
     return geninfo
+
+
+def get_historic_outages(today, lookback=31):
+    '''
+    Collect past month of outage data
+    Determine on T-14 days 
+    '''
+    try:
+        # establish connection
+        with pymssql.connect(
+            server="databases-plus-gr.public.f68d1dee025f.database.windows.net",
+            port="3342",
+            user="dept-energy",
+            password="dirty-prejudge-MUTINEER-lyle-castrate",
+            database="Historical-MMS"
+        ) as connection:
+            
+            print(f"Querying database to collect past {lookback} days of outages ...", end="\r")    
+            # create cursor
+            cursor = connection.cursor()
+            
+            # prepare arguments
+            end_date = pd.to_datetime(today) - pd.DateOffset(days=1)
+            start_date = end_date - pd.DateOffset(days=lookback)
+                              
+            # load query
+            with open(os.path.join(scriptp,"sql/outage_master_with_unit_status.sql"), "r") as file:
+            #with open(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'sql','mtpasa_availability.sql')), "r") as file: #
+                sql_query = file.read()
+
+            # add arguments to query
+            sql_query = sql_query.format(
+                start_date=start_date.date(),
+                end_date=end_date.date()
+            ) 
+            
+            # execute query
+            cursor.execute(sql_query)
+
+            # return results in dataframe
+            data = cursor.fetchall() # Data only, without column names
+            columns = [row[0] for row in cursor.description] # .description gives column names
+            df = pd.DataFrame(
+                data=data,
+                columns=columns
+            )
+            print(f"Querying database to collect past {lookback} days of outages ... complete.")
+
+            df.to_csv("./data/historic_outages.csv",index=False)
+
+            # df = pd.read_csv("./data/historic_outages.csv")
+
+            ## for diagnosis
+            df['current_status'] = 'RETURNED'
+
+            df['region'] = df['REGIONID'].str.replace("1","")
+
+            unit_state_dict = {
+                    'OUTAGEPLANBASIC' : 'Planned',
+                    'OUTAGEUNPLANFORCED' : 'Unplanned',
+                    'OUTAGEUNPLANMAINT' : 'Unplanned',
+                    'DERATINGUNPLANFORCED' : 'Unplanned',
+                    'MOTHBALLED' : 'Unclear',
+                    'INACTIVERESERVE' : 'Unclear',
+                    'RETIRED' : 'Retired',
+                    'OUTAGEPLANEXTEND' : 'Planned',
+                    'DERATINGUNPLANMAINT' : 'Unplanned',
+                    'DERATINGPLANBASIC' : 'Planned',
+                    'DERATINGPLANEXTEND' : 'Planned',
+                    'NODERATINGS' : 'Planned'
+                }
+
+            # this is an estimate only (visual so it matters less)
+            df['outage_type'] = df['PASAUNITSTATE'].map(unit_state_dict)
+
+            df = df[['DUID','region','OutageFrom','OutageTo','outage_type']]
+
+            df.columns = ['duid','region','outage_date','expected_return','outage_type']
+
+            df['outage_date'] = pd.to_datetime(df['outage_date'])
+            df['expected_return'] = pd.to_datetime(df['expected_return'])
+
+            df = df[df['expected_return']>(pd.to_datetime(today)-pd.DateOffset(days=lookback))]
+            df = df[df['expected_return']<pd.to_datetime(today)]
+            
+            return df.copy()
+
+    except pymssql.Error as e:
+        print(f"Database error occurred: {e}")
+        return None
+
+
