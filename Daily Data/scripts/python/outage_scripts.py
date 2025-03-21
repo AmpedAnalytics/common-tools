@@ -27,7 +27,9 @@ def get_coal_availability(duids, start_date):
             
             # prepare arguments
             duid_list = "', '".join(duids)
-            end_date = start_date + pd.DateOffset(days=6)
+            # end_date = start_date + pd.DateOffset(days=6)
+            end_date = start_date + pd.DateOffset(days=14)
+
   
             # load query
             with open(os.path.join(scriptp,"sql/mtpasa_availability.sql"), "r") as file:
@@ -60,7 +62,7 @@ def get_coal_availability(duids, start_date):
         return None
 
 
-def diagnose_outage(duid, outage_data):
+def diagnose_outage(duid, outage_data,verbose=False):
     '''Applies logic to the DUID's diagnostic data to classify the outage as 'Planned',
     'Unplanned' or 'Unclear'.'''
 
@@ -69,10 +71,12 @@ def diagnose_outage(duid, outage_data):
     # check unit state
     unit_state = outage_data.at[duid, "os_pasaunitstate"]
     if ("UNPLAN" in unit_state) | ("FORCE" in unit_state):
-        print(f"{duid}: Unit state is {unit_state} at time of outage. Outage is unplanned.")
+        if verbose:
+            print(f"{duid}: Unit state is {unit_state} at time of outage. Outage is unplanned.")
         return "Unplanned"
     if unit_state == "INACTIVERESERVE":
-        print(f"{duid}: Unit state is INACTIVERESERVE at time of outage. Outage is planned.")
+        if verbose:
+            print(f"{duid}: Unit state is INACTIVERESERVE at time of outage. Outage is planned.")
         return "Planned"
     # check rampdown rate for a trip
     actual_mw = float(outage_data.at[duid, "actual_mw"])
@@ -80,12 +84,14 @@ def diagnose_outage(duid, outage_data):
     rampdown_rate = (prior_mw - actual_mw) / 5
     max_rampdown_rate = outage_data.at[duid, "max_ramp_rate"]
     if rampdown_rate > max_rampdown_rate:
-        print(f"{duid}: Unit ramped down at unsafe speed. Outage is likely unplanned.")
+        if verbose:
+            print(f"{duid}: Unit ramped down at unsafe speed. Outage is likely unplanned.")
         return "Unplanned"
     # check pasa_availability, which indicates planned outages
     pasaavail = float(outage_data.at[duid, "os_pasaavail"])
     if pasaavail < outage_threshold:
-        print(f"{duid}: PASA availability is (near) zero at time of outage. Outage is likely planned.")
+        if verbose:
+            print(f"{duid}: PASA availability is (near) zero at time of outage. Outage is likely planned.")
         return "Planned"
     # check target MW versus actual MW
     target_mw = outage_data.at[duid, "target_mw"]
@@ -93,7 +99,8 @@ def diagnose_outage(duid, outage_data):
         target_mw = float(target_mw)
         output_diff = float(target_mw - actual_mw)
         if output_diff > max_rampdown_rate:
-            print(f"{duid}: Power is {output_diff:,.0f}MW below target at time of outage. Outage is likely unplanned.")
+            if verbose:
+                print(f"{duid}: Power is {output_diff:,.0f}MW below target at time of outage. Outage is likely unplanned.")
             return "Unplanned"
     # verify whether diagnostic data exists
     bidding_data = pd.notna(outage_data.at[duid, "bidofferdate"])
@@ -101,23 +108,28 @@ def diagnose_outage(duid, outage_data):
         # check reason/explanation field
         reason = outage_data.at[duid, "rebidexplanation"].lower()
         if ("trip" in reason) | ("leak" in reason) | ("fault" in reason) | ("fail" in reason) | ("unexpect" in reason):
-            print(f"{duid}: Reason field suggests a failure. Outage is likely unplanned.")
+            if verbose:
+                print(f"{duid}: Reason field suggests a failure. Outage is likely unplanned.")
             return "Unplanned"
         unit_state_now = outage_data.at[duid, "latest_pasaunitstate"]
         if pd.notna(unit_state_now):
             if ("UNPLAN" in unit_state_now) | ("FORCE" in unit_state_now):
-                print(f"{duid}: The original unit state was {unit_state} but it is now {unit_state_now}. Outage is unplanned.")
+                if verbose:
+                    print(f"{duid}: The original unit state was {unit_state} but it is now {unit_state_now}. Outage is unplanned.")
                 return "Unplanned"
             if ("PLAN" in unit_state_now) & ("UNPLAN" not in unit_state_now):
-                print(f"{duid}: The original unit state was {unit_state} but it is now {unit_state_now}. Outage is likely planned.")
+                if verbose:    
+                    print(f"{duid}: The original unit state was {unit_state} but it is now {unit_state_now}. Outage is likely planned.")
                 return "Planned"
     # final check if target MW indicates planned shutdown
     if pd.notna(target_mw):
         if target_mw < outage_threshold * 3:
-            print(f"{duid}: Target output is very low ({target_mw:,.0f}MW) at time of outage. Outage is likely planned.")
+            if verbose:
+                print(f"{duid}: Target output is very low ({target_mw:,.0f}MW) at time of outage. Outage is likely planned.")
             return "Planned"
     # return 'unclear' if outage remains undefined
-    print(f"{duid}: The outage was unable to be classified automatically. PASA availability is above zero, ramp-down was safe and other checks were inconclusive. Outage type is unclear.")
+    if verbose:
+        print(f"{duid}: The outage was unable to be classified automatically. PASA availability is above zero, ramp-down was safe and other checks were inconclusive. Outage type is unclear.")
     
     return "Unclear"
 
@@ -174,7 +186,7 @@ def get_outage_data(duids, day):
             idx = outage_data.groupby("duid")["outage_start"].idxmax()
             outage_data = outage_data.loc[idx]
 
-            print("Collecting outage information and return dates for coal units ... complete.\n")
+            print("Collecting outage information and return dates for coal units ... complete")
             
             return outage_data.set_index("duid")
 

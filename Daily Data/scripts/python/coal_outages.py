@@ -17,6 +17,8 @@ from outage_scripts import (
     get_historic_outages
 )
 
+test_date = pd.to_datetime("2025-01-15").date()
+
 def get_coal_outages():
 
     output_path = os.path.realpath(os.path.join(__file__,"../../../OUTPUT/"))
@@ -41,35 +43,38 @@ def get_coal_outages():
     today = pd.to_datetime("today").date()
 
     # ! test a different day !
-    # today = pd.to_datetime("2024-10-16").date()
+    # today = test_date
 
-    mtpasa = get_coal_availability(
-        coal_duids,
-        today + pd.DateOffset(days=1)
-    )
+    # mtpasa = get_coal_availability(
+    #     coal_duids,
+    #     today + pd.DateOffset(days=1)
+    # )
 
-    mtpasa['DAY'] = pd.to_datetime(mtpasa['DAY'])
+    # mtpasa['DAY'] = pd.to_datetime(mtpasa['DAY'])
 
-    outage_data = get_outage_data(
-        coal_duids,
-        today
-    )
+    # outage_data = get_outage_data(
+    #     coal_duids,
+    #     today
+    # )
 
-    historic_outages = get_historic_outages(
-        today,
-        lookback=15 # can change duration looking backwards
-    )
+    # historic_outages = get_historic_outages(
+    #     today,
+    #     lookback=15 # can change duration looking backwards
+    # )
 
-    mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"))
-    outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
+    # mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"),index=False)
+    # outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
+    # historic_outages.to_csv(os.path.join(data_path,"historic_outage_example.csv"),index=False)
 
     # ### DEBGUG START
     
     # Comment above and uncomment below for debugging
 
-    # mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),index_col=0,parse_dates=['DAY'])
-    # outage_data = pd.read_csv(os.path.join(data_path,"outage_example.csv"),index_col=0,parse_dates=[
-    #               'outage_start','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
+    mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),parse_dates=['DAY'])
+    outage_data = pd.read_csv(os.path.join(data_path,"outage_example.csv"),index_col=0,parse_dates=[
+                  'outage_start','outage_end','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
+    historic_outages = pd.read_csv(os.path.join(data_path,"historic_outage_example.csv"),parse_dates=[
+                  'outage_date','expected_return'])
     
     ### DEBUG END
 
@@ -262,7 +267,7 @@ def get_coal_outages():
     current_duids,_,_,current_outages,return_to_service = process_info(outage_data)
 
     for duid in current_duids:
-        outage_type = diagnose_outage(duid, outage_data)
+        outage_type = diagnose_outage(duid, outage_data, verbose=True)
         current_outages.at[duid, "outage_type"] = outage_type
 
     # fill in today's total outages
@@ -345,88 +350,177 @@ def get_coal_outages():
 
     all_outages = pd.concat([outcp,future_planned_outages,historic_outages],axis=0).reset_index(drop=True)
     
-    return all_outages #all_outages.copy()
+    all_outages.to_csv("./data/all_outages.csv",index=False)
+
+    return all_outages.copy()
 
 all_out = get_coal_outages()
 
-def visualise_outages(df):
+def visualise_outages(df,today=test_date):
     plt.rcParams["font.family"] = "Times New Roman"
+    plt.rcParams['hatch.linewidth'] = 0.5
 
     today = pd.to_datetime("today").date()
 
     # Sort by region first, then by start date
-    df.sort_values(by=["region", "outage_date", "duid"], inplace=True)
+    df.sort_values(by=["region","duid","outage_date"], inplace=True)
 
     df_len = len(df)
 
     # Assign unique indices for better region separation
-    df["y_pos"] = range(df_len)
+    df["y_pos"] = range(df_len,0,-1)
+    # df["y_pos"] = df.groupby("duid").ngroup(ascending=False) + 1
 
-    fs = (12,3)
 
-    dayticks=1
-
-    if df_len < 2:
-        fs = (12,2)
-
-    if df_len < 4:
-        fs = (12,3)
-
-    if df_len >= 5:
-        fs = (12,4)
-
-    if df_len > 10:
-        fs = (12,5)
-
-    daterange = (df.expected_return.max() - df.outage_date.min()).days
-
-    if daterange < 7:
-        dayticks = 2
-    if daterange < 14:
-        dayticks = 3
-    if daterange < 21:
-        dayticks = 4
-    else:
-        dayticks = 7
+    fs = (15,max(2,df_len*0.5)) # re-scale figure according to how many outages there are
 
     # Set up the figure
     plt.figure(figsize=fs)
     ax = plt.gca()
 
-    # Define colors by region
-    palette = sns.color_palette("Set2", n_colors=df["region"].nunique())
-    region_colors = dict(zip(df["region"].unique(), palette))
+    #
+    ax.set_facecolor((0.9, 0.9, 0.9, 0.5))
 
+    # Define colors by region
+    regions = df["region"].unique()
+    palette = sns.color_palette("Set2", n_colors=df["region"].nunique())
+    region_colors = dict(zip(regions, palette))
+
+    minOutage = df.outage_date.min()
+    maxReturn = today + pd.Timedelta(days=16)
+
+    # Assign max return date for outages expecting to be forever
+    df["maxwidthCalc"] = df["expected_return"].clip(upper=pd.to_datetime(maxReturn))
+
+    # Plot a dashed red line on today in the background
+    ax.vlines(x=today,ymin=-2,ymax=df_len+2,alpha=0.4,linestyles="dashed",colors="red",zorder=1)
+    ax.text(x=today,y=-1.1,s="   Today",fontsize=12,color="black",fontweight="bold")
+
+    hatchList = []
     # Plot horizontal bars with start and end dates, thinner bars
-    for _, row in df.iterrows():
-        ax.barh(
-            y=row["y_pos"], 
-            width=(row["expected_return"] - row["outage_date"]).days, 
-            left=row["outage_date"], 
-            height=0.6,  # Reduced bar height for closer spacing
-            color=region_colors[row["region"]],
-            edgecolor="black"
-        )
-        # Add labels inside the bars
-        ax.text(
-            row["outage_date"] + (row["expected_return"] - row["outage_date"]) / 2,  # Center label
-            row["y_pos"],
-            f"{row['duid']} ({row['outage_type']})",
-            va="center",
-            ha="center",
-            fontsize=10,
-            color="black",
-            fontweight="bold"
-        )
+    for i, row in df.iterrows():
+        w = (row["maxwidthCalc"] - row["outage_date"]).days
+
+        if w==0:
+            # add a scatterplot instead (add one marker)
+            if row["outage_type"]=="Unplanned":
+                ax.scatter(
+                    x = row["outage_date"],
+                    y = row["y_pos"],
+                    color=region_colors[row["region"]],
+                    edgecolor="black",
+                    marker='s',
+                    s=200,
+                    linewidth=1.2,
+                    hatch="//")
+            elif row["outage_type"]=="Unclear":
+                ax.scatter(
+                    x = row["outage_date"],
+                    y = row["y_pos"],
+                    color=region_colors[row["region"]],
+                    edgecolor="black",
+                    marker='s',
+                    s=200,
+                    linewidth=1.2,
+                    hatch="xx")
+            else:
+                ax.scatter(
+                    x = row["outage_date"],
+                    y = row["y_pos"],
+                    color=region_colors[row["region"]],
+                    edgecolor="black",
+                    marker='s',
+                    s=200,
+                    linewidth=1.2)
+        else:
+            ax.barh(
+                    y=row["y_pos"], 
+                    width=w, 
+                    left=row["outage_date"], 
+                    height=0.66,  # Reduced bar height for closer spacing
+                    color=region_colors[row["region"]],
+                    edgecolor="black",
+                    linewidth=1.2)
+            if row["outage_type"]=="Unplanned":
+                hatchList.append("/")
+            elif row["outage_type"]=="Unclear":
+                hatchList.append("x")
+            else:
+                hatchList.append(False)
+
+                
+        # is it 4 days off the edge
+        textposLeft = ((pd.to_datetime(maxReturn)-row["maxwidthCalc"]).days < 6) and (w < 3)
+
+        # print(row['duid'],w,textposLeft,row["outage_date"],row["expected_return"])
+
+        if w < 3 and not textposLeft:
+            # put text to the right of the bar
+            ax.text(
+                row["maxwidthCalc"],  # Label on the right
+                row["y_pos"],
+                f"    {row['duid']}",
+                va="center",
+                ha="left",
+                fontsize=11,
+                color="black",
+                fontweight="bold"
+            )
+        elif textposLeft:
+            # it is near the end edge
+            # put text to the left of the bar
+            ax.text(
+                row["outage_date"],  # Left label
+                row["y_pos"],
+                f"{row['duid']}    ",
+                va="center",
+                ha="right",
+                fontsize=11,
+                color="black",
+                fontweight="bold"
+            )
+        else:
+            ax.text(
+                row["outage_date"] + pd.Timedelta(days=w/2),  # Center label
+                row["y_pos"],
+                f"{row['duid']}",
+                va="center",
+                ha="center",
+                fontsize=11,
+                color="#FFFFF0",
+                fontweight="bold"
+            )
+
+    for i,thisbar in enumerate(ax.patches):
+        # Set a different hatch for each bar
+        hatch = hatchList[i]
+        if hatch:
+            thisbar.set_hatch(hatch)
 
     # Add dashed separators between regions
-    region_breaks = df.groupby("region")["y_pos"].last().values[:-1]  # Get last index of each region
-    for y in region_breaks:
-        ax.axhline(y=y + 0.5, color="black", linestyle="dashed", linewidth=1.2)
+    region_break_end = df.groupby("region")["y_pos"].last().values[:-1]  # Get last index of each region
+    for i,y in enumerate([df_len+1]+list(region_break_end)):
+        ax.axhline(y=y - 0.5, color="black", linestyle="dashed", linewidth=1.2)
+        ax.text(x=minOutage+pd.Timedelta(days=1),y=y,s=regions[i],
+                fontsize=14,color="black",fontweight="bold")
+
+    ax.scatter(x=minOutage+pd.Timedelta(days=1),y=-0.3,color="white",edgecolor="black",marker='s',s=100)
+    ax.text(x=minOutage+pd.Timedelta(days=1),y=-0.45,s="   Planned",
+            fontsize=10,color="black",fontweight="bold")
+    ax.scatter(x=minOutage+pd.Timedelta(days=1),y=-0.9,color="white",edgecolor="black",marker='s',s=100,hatch="////")
+    ax.text(x=minOutage+pd.Timedelta(days=1),y=-1.05,s="   Unplanned",
+            fontsize=10,color="black",fontweight="bold")
+    ax.scatter(x=minOutage+pd.Timedelta(days=1),y=-1.5,color="white",edgecolor="black",marker='s',s=100,hatch="xxxx")
+    ax.text(x=minOutage+pd.Timedelta(days=1),y=-1.65,s="   Unclear",
+            fontsize=10,color="black",fontweight="bold")
 
     # Format x-axis as dates
-    ax.set_xlim(df.outage_date.min()-pd.Timedelta(days=1),df.expected_return.max()+pd.Timedelta(days=1))
-    ax.xaxis.set_major_locator(mdates.DayLocator(interval=dayticks))  # Major ticks every 5 days
+
+    # ALWAYS center on today +- 15 days
+    ax.set_xlim(minOutage,maxReturn)
+    ax.set_ylim(-2,df_len+2)
+    # ax.set_ylim(-2,df["y_pos"].max())
+    ax.xaxis.set_major_locator(mdates.DayLocator(interval=4))  # Major ticks every 5 days
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))  # Format as YYYY-MM-DD
     plt.xticks(rotation=30, ha="right", fontsize=10)  # Rotate for readability
 
@@ -436,7 +530,7 @@ def visualise_outages(df):
 
     # Labels and title
     plt.xlabel("Date", fontsize=12)
-    plt.title(f"Coal Outages (Updated on {today:%d %B %Y})", fontsize=14, fontweight="bold")
+    plt.title(f"Coal Outages (Updated on {today:%d %B %Y})", fontsize=20, fontweight="bold")
 
     # Legend
     handles = [plt.Line2D([0], [0], color=color, lw=6) for color in region_colors.values()]
@@ -445,8 +539,8 @@ def visualise_outages(df):
     plt.grid(axis="x", linestyle="--", alpha=0.5)
     # plt.show()
 
-    plt.tight_layout()
-    plt.subplots_adjust(left=0.11) 
-    plt.savefig("./outage.png",dpi=200)
+    # plt.tight_layout()
+    # plt.subplots_adjust(left=0.11) 
+    plt.savefig(f"./outage_{today}.png",dpi=200)
 
 visualise_outages(all_out)

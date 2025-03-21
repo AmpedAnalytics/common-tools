@@ -1,3 +1,6 @@
 duid,name,capacity,outage_type,outage_date,existing,expected_return,region
-GSTONE4,Gladstone 4,280.0,Unclear,2025-03-13,False,2025-03-22,QLD
-GSTONE5,Gladstone 5,280.0,Planned,2025-03-05,True,2025-03-16,QLD
+ER03,Eraring 3,720.0,Unplanned,2025-03-17,True,2025-03-27,NSW
+GSTONE4,Gladstone 4,280.0,Unplanned,2025-03-15,True,2025-04-26,QLD
+LYA1,Loy Yang A 1,560.0,Planned,2025-03-16,True,2025-03-30,VIC
+TARONG#2,Tarong 2,350.0,Planned,2025-03-19,True,2025-04-01,QLD
+YWPS2,Yallourn W 2,350.0,Planned,2025-03-20,False,2025-04-05,VIC
