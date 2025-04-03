@@ -1,0 +1,1206 @@
+notice_date,region,type,reference
+1999-11-29 08:48:06,SA,LRC,Actual LRC SA Region Monday 29 November 1999
+1999-11-30 12:15:26,SA,LRC,Actual LRC SA Region Tuesday 30 November 1999
+1999-12-07 09:12:51,SA,LOR2,"Actual LOR2 SA region Tue 7/12/99, 0658hr to 1230hr"
+2000-01-09 17:45:54,SA,LOR2,Actual LOR2 SA region due to network outage 1741hr to 1830hr Sun 9/1/00
+2000-02-03 13:26:08,SA,LOR3,Actual LOR3 for Victoria and South Australia Regions from 1213  3/2/00
+2000-02-09 14:18:22,SA,LOR1,Actual LOR1 SA Region 1400 to 2030hr Wed 9/2/00
+2000-02-09 14:23:38,NSW,LOR1,Actual LOR1 NSW Region 1430 to 1630hr Wed 9/2/00
+2000-02-17 13:45:48,SA,LRC,ACTUAL LRC SA Region 17/2/2000
+2000-02-17 13:47:10,SA,LOR1,ACTUAL LOR 1 SA Region  17/2/2000
+2000-02-18 11:48:32,SA,LOR1,ACTUAL LOR1 SA Region  18/2/2000
+2000-02-18 14:56:10,SA,LOR2,ACTUAL LOR 2 SA Region 14:55hrs 18/2/2000
+2000-02-19 10:42:31,SA,LRC,Actual LRC SA Region Saturday 19 February 2000.
+2000-02-19 10:50:03,SA,LOR1,Actual LOR1 SA Region Saturday 19 February 2000.
+2000-02-21 07:55:00,SA,LOR1,Actual LOR1 SA Region 0800hr to 1030hr Mon 21/2/00
+2000-02-24 12:02:11,NSW,LOR1,Actual LOR1 NSW region 11:40hrs 24/2/00
+2000-03-02 09:21:15,SA,LOR2,Actual LOR2 SA Region 0900h Thu 02/03/00.
+2000-04-03 11:06:28,SA,LOR1,Actual LOR1 SA Region Monday 3 April 2000
+2000-04-03 13:49:44,SA,LOR1,Actual LOR1 SA Region Monday 3 April 2000
+2000-04-04 07:52:42,SA,LOR2,Actual LOR2 SA Region Tuesday 4 April Transmission outage.
+2000-04-04 08:54:43,SA,LOR2,Actual LOR2 in SA Region 5 to 11 April 2000
+2000-04-05 18:41:47,SA,LOR2,Actual LOR2 SA Region Wednesday 5  April Transmission outage.
+2000-04-06 10:08:52,SA,LOR2,Actual LOR2 SA Region Thursday 6  April Transmission outage.
+2000-04-07 07:45:28,SA,LOR2,Actual LOR2 SA Region Friday 7  April Transmission outage.
+2000-04-08 07:10:38,SA,LOR2,Actual LOR2 SA Region Saturday 8 April 2000
+2000-04-09 07:16:31,SA,LOR2,Actual LOR2 SA Region Sunday 9 April 2000
+2000-04-09 22:37:42,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC to SA Interconnection Sunday 9 April
+2000-04-10 07:14:41,SA,LOR2,Actual LOR2 SA Region Monday 10 April 2000
+2000-04-10 21:52:01,SA,LOR2,Actual LOR2 SA Region following loss of Para-Tailem bend
+2000-04-12 21:03:54,SA,LOR2,Actual LOR2 SA Region Wednesday- Thursday 12-13 April 2000
+2000-04-17 12:00:16,SA,LOR2,Actual LOR 2 SA Region 1200-1600hrs Monday 17 April 2000.
+2000-05-15 12:42:04,SA,LOR2,Actual LOR2 SA Region Monday 15 May 2000.
+2000-05-28 03:00:26,SA,LOR2,Actual LOR2 SA Region Sunday 28 May 2000
+2000-06-08 21:48:00,SA,LOR2,Actual LOR2 SA Region Thursday 8 June Reclassification of VIC to SA Interconnection.
+2000-06-11 15:24:28,SA,LOR2,Actual LOR2 SA Region Sunday 11 June 2000 Reclassification VIC SA Interconnection
+2000-06-11 22:17:10,SA,LOR2,Actual LOR2 SA Region due to transmission element outage VIC SA Interconnector Sunday 11 June 2000
+2000-06-21 03:49:10,SA,LOR2,Actual LOR2 SA Region Wednesday 21 June 2000 Reclassification VIC SA Interconnection
+2000-06-21 12:10:38,SA,LOR2,Actual LOR2 SA Region Wed 21 June 2000 Reclassification VIC SA Interconnection
+2000-06-21 15:44:58,SA,LOR2,Actual LOR2 SA Region Wed 21 June 2000 Reclassification VIC SA Interconnection
+2000-06-21 21:18:07,SA,LOR2,Actual LOR2 SA Region 2105h Wed 21/06/00. Reclassification of VIC SA Interconnectors
+2000-06-22 07:41:07,SA,LOR2,Actual LOR2 SA Region Thu 22 June 2000 Reclassification VIC SA Interconnection
+2000-06-22 12:38:10,SA,LOR2,Actual LOR2 SA Region Thu 22 June 2000 Reclassification VIC SA Interconnection
+2000-06-25 07:03:32,SA,LOR2,Actual LOR2 SA Region Sunday 25th June 2000 Transmission outage. 
+2000-07-08 16:07:23,SA,LOR2,Actual LOR2 SA Region 1550h Sat 08/07/00. Reclassification loss of VIC-SA interconnection as credible contingency.
+2000-07-19 00:37:06,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC SA Interconnection Wednesday 19 July 2000
+2000-07-20 17:09:16,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC SA Interconnection as a single credible contingency.
+2000-07-23 18:24:59,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC SA Interconnection as a single credible contingency.
+2000-07-25 01:48:47,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC SA Interconnection as a single credible contingency.
+2000-08-08 08:40:19,SA,LOR2,Actual LOR2 SA Region due to reclassification of VIC SA Interconnection Tuesday 8th August 2000
+2000-08-24 06:34:47,SA,LOR2,Actual LOR2 SA Region Thursday 24th August Transmission outage
+2000-10-05 19:20:33,SA,LOR2,Actual LOR2 SA Region from 1905hrs Thursday 5th October 2000.
+2000-12-08 05:10:12,SA,LOR2,"Actual LOR2 SA Region  0433hrs to 0457hrs  Friday 8 December, 2000"
+2000-12-08 09:10:40,SA,LOR2,"Actual LOR2 SA Region  0847hrs to 0901hrs  Fri 8 Dec, 2000"
+2000-12-11 15:47:52,SA,LOR2,"Actual LOR2 SA Region  1514hrs to approx 1630hrs  Monday 11 December, 2000"
+2001-01-04 21:32:12,SA,LOR2,"Actual LOR2 SA Region from 2120hr Thursday 4th January, 2001till further notice."
+2001-01-05 00:25:31,SA,LOR2,"Actual LOR2 SA Region from 2120hr Thursday 4th January, 2001till further notice."
+2001-01-05 02:17:08,SA,LOR2,Actual LOR2 SA Region from 21:20 Thurs 4/1/01 until 02:00 Fri 5/1/01
+2001-01-10 14:50:35,SA,LOR2,Actual LOR2 SA Region from 1440hrs Wednesday 10/01/01 until further notice.
+2001-01-22 15:18:53,SA,LOR2,Actual LOR2 SA Region  1510hr to approx 1700hr Mon 22 Jan 2001
+2001-01-24 08:56:37,SA,LOR2,Actual LOR2 SA Region from 0847hrs Wednesday 24/01/01 until further notice.
+2001-01-24 13:25:48,SA,LOR2,Actual LOR2 SA Region from 1320hrs Wednesday 24/01/01 until further notice.
+2001-01-25 11:13:47,SA,LOR2,Actual LOR2 SA Region from 1100hrs Thursday 25/01/01 until further notice.
+2001-01-26 02:13:45,SA,LOR2,Actual LOR2 SA Region from 0210hrs Fri 26 Jan 01 until further notice.
+2001-02-06 16:27:48,SA,LOR2,"Actual LOR2 SA Region from 1625hr to approx 1800hr Tuesday 6 February, 2001 "
+2001-02-07 15:17:37,SA,LOR2,"Actual LOR2 SA Region from 1500hr  until further notice  Wednesday 7 February, 2001"
+2001-02-07 19:08:19,SA,LOR2,"Actual LOR2 SA Region from 1905hr  until further notice  Wednesday 7 February, 2001"
+2001-02-07 21:53:19,SA,LOR2,"Actual LOR2 SA Region from 2120hr to approx 2200hr Wednesday 7 February, 2001"
+2001-02-13 00:04:11,SA,LOR2,"Actual LOR2 SA Region from 0000hr  until further notice  Tuesday 13 February, 2001"
+2001-02-14 06:33:47,SA,LOR2,"Actual LOR2 SA Region from 0615hr  until further notice  Wednesday 14 February, 2001"
+2001-02-15 18:08:09,SA,LOR2,Actual LOR2 SA Region  1830hrs to 1930hrs Thursday  15 February 2001
+2001-02-15 19:57:41,SA,LOR2,Actual LOR2 SA Region  1845hrs to 1950hrs Thursday  15 February 2001
+2001-03-16 05:14:59,SA,LOR2,"Actual LOR2 SA Region from 0506hr  until further notice  Friday 16 March, 2001"
+2001-04-30 08:49:25,SA,LOR2,"Actual LOR2 SA Region from 0715hrs  to 1700 Monday 30 April, 2001"
+2001-05-01 07:29:29,SA,LOR2,"Actual LOR2 SA Region from 0703hrs  to 1700 Tuesday 01 May, 2001"
+2001-05-02 06:39:37,SA,LOR2,Actual LOR2 South Australia Region from 0630hr to 1730hr Wednesday 02 May 2001
+2001-05-03 06:59:10,SA,LOR2,Actual LOR2 South Australia Region from 0628hr to 1730hr Thursday 03 May 2001
+2001-05-04 06:33:20,SA,LOR2,Actual LOR2 South Australia Region from 0631hr to 1730hr Friday 04 May 2001
+2001-05-16 05:50:27,SA,LOR2,Actual LOR2 South Australia region - 0545hr to 1830hr Wednesday 16 May 2001
+2001-05-17 08:43:45,SA,LOR2,Actual LOR2 South Australia region - 0555hr to 1830hr Thursday 17th May  2001
+2001-07-25 19:55:56,SA,LOR2,Actual LOR2 South Australia region - 1945hr to 2030hr Wednesday 25 Jul 2001
+2001-07-25 20:31:34,SA,LOR2,Actual LOR2 South Australia region extended - 1945hr to 2130hr Wednesday 25 Jul 2001
+2001-07-25 21:27:13,SA,LOR2,Actual LOR2 South Australia region Cancelled
+2001-09-04 15:06:41,SA,LOR2,Actual LOR2 South Australia region - 1350hr to 2100hr Tuesday 04th September  2001 .
+2001-09-23 19:26:57,SA,LOR2,Actual LOR2 South Australia region cancelled 1920hr Sunday 23rd September 2001
+2002-04-16 07:03:03,SA,LOR2,Actual LOR2 for SA Region Tuesday 16 April 2002
+2002-04-17 06:02:38,SA,LOR2,Actual LOR2 for SA Region Wenesday 17th April 2002
+2002-04-18 06:30:07,SA,LOR2,Actual LOR2 for SA Region 06:15hrs Thursday 18th April 2002
+2002-05-30 08:04:29,SA,LOR2,Actual LOR2 for SA Region 06:15hrs Thurs 30th May 2002
+2002-06-03 19:20:28,QLD,LOR1,Actual LOR1 Qld region SE area Monday 3 June 2002
+2002-06-13 03:07:38,SA,LOR2,Actual LOR2 SA Region  Thursday 13th June 2002  (1)
+2002-06-15 15:00:22,SA,LOR2,Actual LOR2 SA Region  Saturday 15th June 2002
+2002-06-30 17:55:28,SA,LOR1,Actual LOR1 SA Region -- Sunday 30th June 2002
+2002-07-02 20:23:15,QLD,LOR1,Actual LOR1 Qld Region -- Tuesday 02nd July 2002
+2002-07-05 13:56:53,SA,LOR2,Actual LOR2 SA Region  Friday 5 July 2002
+2002-07-23 19:39:15,SA,LOR2,Actual LOR2 SA Region  Tuesday 23 July 2002
+2002-08-21 16:36:41,QLD,LOR1,Actual LOR1 Qld Region -- Wednesday 21 August 2002
+2002-08-28 13:06:41,SA,LOR2,Actual LOR2 SA Region  Wednesday 28th August 2002
+2002-09-29 12:38:16,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Sunday 29 september 2002
+2002-10-03 17:13:23,SA,LOR2,Actual LOR2 SA Region  Thursday 3rd October 2002
+2002-10-03 19:15:52,SA,LOR2,Actual LOR2 SA Region  Thursday 3rd October 2002 (2)
+2002-10-08 07:25:44,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Tuesday 8 October 2002
+2002-10-09 14:42:53,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Wednesday 9 October 2002
+2002-10-14 21:35:59,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Monday 14 October 2002.
+2002-10-14 23:12:17,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Monday 14 October 2002 update.
+2002-10-15 03:26:32,SA,LOR2,Actual LOR 2 condition for SA region due to Network outage Monday 14 October 2002 update (2).
+2002-10-15 21:06:28,SA,LOR2,Actual LOR2 SA region Tuesday 15 October 2002
+2002-10-16 07:12:28,SA,LOR2,Actual LOR2 SA region Wednesday 16 October 2002
+2002-10-25 12:13:12,SA,LOR1,Actual LOR1 SA Region -- Fri 25 Oct 02
+2002-10-26 14:24:48,SA,LOR2,Actual LOR2 SA Region Sat 26 Oct 02
+2002-11-02 03:31:37,SA,LOR2,Actual LOR2 SA Region  Saturday 2nd November 2002
+2002-11-06 06:14:00,SA,LOR2,Actual and Forecast LOR 2 conditions SA Region - Network outage Wed 6th Nov 2002
+2002-11-06 21:07:11,SA,LOR2,Actual LOR2 SA Region  Wednesday 6th November 2002
+2002-11-07 15:50:12,SA,LOR2,Actual LOR2 SA Region Thurs 7th November 2002
+2002-11-07 18:17:07,SA,LOR2,Actual LOR2 SA Region Thurs 7th November 2002 
+2002-11-08 13:14:57,SA,LOR2,Actual LOR2 SA Region -- Friday 8th November 2002
+2002-11-16 04:55:01,SA,LOR2,Actual LOR2 SA Region Saturday 16 November 2002
+2002-11-17 15:51:28,SA,LOR2,Actual LOR2 SA Region Saturday 16 November 2002
+2002-11-23 05:50:43,SA,LOR2,Actual LOR2 SA Region Saturday 23 November 2002
+2002-11-25 22:01:39,SA,LOR2,Actual LOR2 SA Region  Mon 25 Nov 02
+2002-12-04 10:01:36,QLD,LOR1,Actual LOR1 QLD Region -- Wed 4 Dec 02
+2002-12-09 07:39:16,SA,LOR2,Actual LOR2 SA Region Monday 9th Dec. 2002
+2002-12-09 10:14:46,SA,LOR2,Actual LOR2 SA Region Monday 9th Dec. 2002
+2002-12-10 08:47:18,SA,LOR2,Actual LOR2 SA Region Tuesday 10th Dec. 2002
+2002-12-10 11:26:19,SA,LOR2,Actual LOR2 SA Region Tuesday 10th Dec. 2002
+2002-12-11 07:09:41,SA,LOR2,Actual LOR2 SA region Wednesday 11 December 2002
+2002-12-14 05:06:07,SA,LOR2,Actual LOR2 SA region Saturday 14 December 2002
+2002-12-14 13:53:31,SA,LOR2,Actual LOR2 SA Region - - Saturday 14 December 2002
+2002-12-17 16:12:59,SA,LOR1,Actual LOR 1:   South Australian Region for Tuesday 17th December 2002
+2002-12-21 17:55:12,SA,LOR2,Actual LOR2 SA Region Sat 21 December 2002
+2002-12-22 01:10:48,SA,LOR2,Actual LOR2 SA Region Sat 21 December 2002
+2002-12-22 11:31:29,SA,LOR2,Actual LOR2 SA Region Sun 22 December 2002
+2002-12-30 23:51:42,SA,LOR2,Actual LOR2 SA Region  Monday 30th December 2002 at 2340hrs.
+2003-01-09 07:29:53,SA,LOR2,Actual LOR2 SA Region Thur 9th Jan 2003
+2003-01-10 07:34:37,SA,LOR2,Actual LOR2 SA Region Friday 10th Jan 2003
+2003-01-13 07:12:57,SA,LOR2,Actual LOR2 SA Region 0700-0730hrs Monday 13th Jan 2003
+2003-01-14 11:49:55,SA,LOR2,Actual LOR2 SA Region Tuesday 14th Jan 2003
+2003-01-20 06:42:52,SA,LOR2,Actual LOR2 SA Region Monday 20th Jan 2003
+2003-01-29 15:20:21,NSW,LOR1,Actual LOR 1:   New South Wales Region for Wednesday 29th January 2003
+2003-01-30 11:21:38,NSW,LOR1,Actual LOR 1:   New South Wales Region for Thursday 30th January 2003
+2003-02-04 14:01:01,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region
+2003-02-15 08:20:27,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region
+2003-02-16 05:24:28,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region
+2003-02-22 05:42:37,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region Sat 22nd Feb 2003
+2003-02-22 16:41:15,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region Sat 22nd Feb 2003
+2003-02-23 06:17:56,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia region Sun 23rd Feb 2003
+2003-02-23 16:20:55,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region Sun 23rd Feb 2003
+2003-02-23 19:43:48,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region Sun 23rd Feb 2003
+2003-02-27 11:45:27,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia region Thurs 27th Feb 2003
+2003-03-01 07:39:12,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia region Sat 01st March 2003
+2003-04-09 15:57:14,SA,LOR2,Actual LOR 2 condition SA region - Network outage  Wed 9th April 2003
+2003-04-09 19:04:11,SA,LOR2,Actual LOR 2 condition SA region - Network outage  Wed 9th April 2003
+2003-04-10 18:01:51,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia region Thursday 10th April 2003
+2003-04-24 07:57:15,SA,LOR2,Actual LOR2 SA region Thursday 24 April 2003
+2003-05-11 18:18:56,SA,LOR2,Actual LOR2 SA Region  Sunday 11th May 2003
+2003-05-17 23:49:41,SA,LOR2,Actual LOR2 SA Region  Saturday 17th May 2003
+2003-05-19 13:57:33,SA,LOR2,Actual LOR2 SA Region  Monday 19th May 2003
+2003-05-27 08:29:00,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region. 27 May 2003
+2003-08-09 16:38:54,SA,LOR2,Actual LOR2 SA Region  Saturday 9 August 2003
+2003-08-18 18:06:27,SA,LOR2,Actual LOR2 SA Region  Monday 18 August 2003
+2003-08-21 12:35:06,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region
+2003-09-11 21:00:55,SA,LOR2,"ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region, Thursday 11 September 2003"
+2003-09-17 09:04:23,SA,LOR2,"Actual Lack of Reserve Condition (LOR2) in the South Australia Region, Wednesday 17 to Friday 19 September 2003"
+2003-09-20 22:41:13,SA,LOR2,"ACTUAL LACK OF RESERVE CONDITION (LOR2) in the South Australia Region, Saturday 20 September 2003"
+2003-10-19 03:48:40,SA,LOR2,Actual LOR2 SA region Sunday 19 October 2003
+2003-10-21 09:18:01,SA,LOR2,Actual LOR2 SA region Tuesday 21 October 2003
+2003-10-22 17:38:35,SA,LOR2,ACTUAL  LOR2 in the South Australia Region Wednesday 22 October 2003
+2003-10-23 09:28:35,SA,LOR2,Actual LOR2 SA Region --Thursday 23rd October 2003
+2003-10-31 09:03:05,SA,LOR2,ACTUAL  LOR2 in the South Australia Region - Friday 31 October 2003
+2003-11-19 14:03:48,SA,LOR2,Actual LOR2 South Australia region - Wednesday 19 November 2003
+2003-12-10 00:23:23,SA,LOR2,Actual  (LOR2) condition in the South Australia Region : Wed 10th Dec 2003.
+2003-12-13 10:02:49,SA,LOR2,ACTUAL  LOR2 in the South Australia Region - Saturday 13 December 2003
+2004-01-14 07:11:39,SA,LOR2,Actual LOR2 in the South Australia Region - Wednesday 14 January 2004
+2004-02-14 09:46:04,SA,LOR1,Actual & Forecast LOR1 South Australia region - Saturday 15  February 2004
+2004-02-14 10:17:25,SA,LRC,"Actual & Forecast Low Reserve Condition (LRC) in South Australia region, Saturday 14 February 2004"
+2004-03-08 14:03:30,SA,LOR2,Actual LOR2 in the South Australia Region - Monday 8 March 2004
+2004-03-08 17:45:01,SA,LOR2,Actual LOR2 in the South Australia Region - Monday 8 March 2004
+2004-06-09 02:23:04,SA,LOR2,Actual LOR2 in the South Australia Region - Wednesday 9th June 2004
+2004-06-13 03:22:21,SA,LOR2,Actual LOR2 in the South Australia Region Sunday 13 June 2004
+2004-06-14 18:07:48,SA,LOR2,Actual LOR2 in the South Australia Region Monday 14 June 2004
+2004-06-25 11:39:48,SA,LOR2,Actual LOR2 in the South Australia Region Friday 25th June 2004
+2004-08-10 09:25:36,SA,LOR2,Actual LOR2 in the South Australia Region - Tuesday 10 August  2004
+2004-08-11 06:00:10,SA,LOR2,Actual LOR2 in the South Australia Region - Tuesday 10 August  2004
+2004-08-16 12:01:06,SA,LOR2,Actual LOR2 in the South Australia Region - Monday 16th August  2004
+2004-08-31 10:35:36,SA,LOR2,Actual LOR2 in the SA Region - Tue 31 Aug  to Thu 2 Sep 2004
+2004-09-28 07:12:40,SA,LOR2,Actual LOR2 in the South Australia Region - Tuesday 28th September  2004
+2004-09-29 07:25:21,SA,LOR2,Actual LOR2 in the South Australia Region - Wed 29th Sept  2004
+2004-10-04 08:08:42,SA,LOR2,Actual LOR 2 South Australia region - 0800hrs to 0815hrs Monday 4 October 2004
+2004-10-06 07:10:48,SA,LOR2,Actual LOR 2 South Australia region - 0700hrs to 1600hrs Wednesday 6 October 2004
+2004-10-06 15:56:52,SA,LOR2,Actual LOR 2 South Australia region - 0700hrs to 1900hrs Wednesday 6 October 2004
+2004-10-07 09:29:04,SA,LOR2,Actual LOR 2 South Australia region - 07:00 to 16:00 Thurssday 7th October 2004
+2004-10-08 07:54:56,SA,LOR2,Actual LOR 2 South Australia region - 07:45 to 16:30 Friday 8th October 2004
+2004-10-10 10:46:40,SA,LOR2,Actual LOR 2 South Australia Region -  Sun 10 Oct 04
+2004-10-11 07:47:30,SA,LOR2,Actual LOR 2 South Australia Region -  Monday 11th October 2004
+2004-10-16 08:51:43,SA,LOR2,Actual LOR 2 South Australia Region -  Saturday 16th October 2004
+2004-10-17 06:01:08,SA,LOR2,Actual LOR 2 South Australia Region -  Sunday 17 October 2004
+2004-11-06 08:27:05,SA,LOR2,Actual LOR 2 South Australia Region -  Sat 6 Nov 2004
+2004-11-07 12:12:28,SA,LOR2,Actual LOR 2 South Australia Region -  Sun 7 Nov 2004
+2004-11-08 07:27:00,SA,LOR2,Actual LOR 2 South Australia Region - Mon 8th Nov 2004
+2004-11-08 17:32:17,SA,LOR2,Actual LOR 2 South Australia Region update - Mon 8th Nov 2004
+2004-12-06 12:55:12,SA,LOR2,Actual LOR2 in the South Australia Region Monday 06 December 2004
+2004-12-11 11:44:20,SA,LOR2,Actual LOR 2 South Australia Region -  Saturday 11 December 2004
+2004-12-13 20:42:48,QLD,LOR1,Actual LOR1 QLD Region Monday 13th December 2004
+2004-12-14 12:39:50,QLD,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in Queensland Region - Tue 14 Dec 2004
+2005-02-08 14:09:44,QLD,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in Queensland Region - Tue Feb 2005
+2005-03-20 08:10:39,SA,LOR2,Actual LOR 2 South Australia Region -  Sunday 20 March 2005
+2005-03-21 07:42:47,SA,LOR2,Actual LOR 2 South Australia Region -  Monday 21 March 2005
+2005-03-22 11:51:44,SA,LOR2,Actual LOR 2 South Australia Region -  Tuesday 22 March 2005
+2005-03-22 16:25:46,SA,LOR2,Actual LOR 2 South Australia Region -  Tuesday 22 March 2005
+2005-04-08 00:18:37,SA,LOR2,Actual LOR2 in the South Australia Region Thursday 7th April 2005
+2005-04-08 08:29:38,SA,LOR2,Actual LOR2 in the South Australia Region Friday 8th April 2005
+2005-05-03 10:32:59,SA,LOR2,Actual LOR2 in the South Australia Region Tuesday 3rd May 2005
+2005-05-10 07:40:21,SA,LOR2,ACTUAL LACK OF RESERVE CONDITION (LOR2) South Australia Region - Tuesday 10th May 2005
+2005-05-11 08:16:21,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Wednesday 11th May 2005
+2005-05-20 17:38:23,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Friday 20th May 2005
+2005-05-27 07:23:23,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Friday 27th May 2005
+2005-05-27 07:36:16,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Friday 27th May 2005
+2005-05-30 09:52:06,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Monday 30th May 2005
+2005-05-31 09:13:31,SA,LOR2,ACTUAL Lack of Reserve Condition (LOR2) South Australia Region - Tuesday 31st May 2005
+2005-06-09 00:30:02,SA,LOR2,Actual LOR2 in the South Australia Region Wednesday 8th June 2005
+2005-06-26 15:16:27,SA,LOR2,Actual LOR2 in the South Australia Region Sunday 26 June 2005
+2005-06-28 06:59:51,SA,LOR2,Actual LOR 2 South Australian region Tue 28 June 2005
+2005-07-10 07:01:45,SA,LOR2,Actual LOR 2 South Australian region Sunday 10 July 2005
+2005-07-10 18:24:21,SA,LOR2,Actual LOR 2 South Australia Region -  Sunday 10 July 2005
+2005-07-10 19:11:39,SA,LOR2,Actual LOR 2 South Australian region Sunday 10 July 2005
+2005-07-13 17:13:31,SA,LOR2,Actual LOR2 South Australian Region Wednesday 13 July 2005
+2005-07-17 08:04:07,SA,LOR2,Actual LOR2 South Australian Region Sunday 17th July 2005
+2005-07-20 13:09:33,SA,LOR2,Actual LOR2 South Australian Region Wednesday 20th July 2005
+2005-07-20 15:37:33,SA,LOR2,Actual LOR2 South Australian Region Wednesday 20th July 2005
+2005-07-20 16:32:24,SA,LOR2,Actual LOR2 South Australian Region Wednesday 20th July 2005
+2005-07-21 12:46:14,SA,LOR2,Actual LOR2 South Australian Region Thursday 21 July 2005
+2005-09-30 16:54:04,SA,LOR2,Actual LOR2 South Australian Region Friday 30 Sept 2005
+2005-10-03 22:34:47,SA,LOR2,Actual LOR2 South Australian Region Mon 3 Oct 2005
+2005-10-17 07:54:13,SA,LOR2,Actual LOR2 South Australian Region Mon 17 Oct 2005
+2005-10-21 08:39:06,SA,LOR2,Actual LOR 2 South Australian region Friday 21st Oct 2005
+2005-10-21 14:59:09,SA,LOR2,Actual LOR 2 South Australian region Friday 21st Oct 2005
+2005-10-23 10:29:47,SA,LOR2,Actual LOR2 South Australian region Sunday 23 Oct 2005
+2005-10-25 20:34:31,SA,LOR2,Actual LOR 2 South Australian region Tuesday 25  October 2005 
+2005-10-27 08:17:40,SA,LOR2,Actual LOR 2 South Australian region Thursday 27 October 2005
+2005-10-27 16:44:00,SA,LOR2,Actual LOR 2 South Australian region Thursday 27 October 2005
+2005-11-02 12:57:23,VIC,LOR1,Actual LOR 1 VIC Region Wednesday 2 November 2005
+2005-11-07 07:31:46,SA,LOR2,Actual LOR2 South Australian Region Monday 7th Nov 2005
+2005-11-12 17:48:52,SA,LOR2,Actual LOR2 South Australian Region Saturday 12th Nov 2005
+2005-11-15 14:48:43,SA,LOR2,Actual LOR2 South Australian Region Tuesday 15th Nov 2005
+2005-11-19 05:43:10,SA,LOR2,Actual LOR2 South Australian Region Saturday 19th Nov 2005
+2005-11-30 09:30:35,SA,LOR2,Actual  LOR 2 South Australian region  Wed 30th November 2005
+2005-12-01 07:33:10,SA,LOR2,Actual LOR 2 South Australia Region  -- 1st December 2005
+2005-12-31 00:54:54,SA,LOR2,Actual LOR2 South Australian Region Saturday 31st December 2005
+2006-01-19 08:46:07,SA,LOR2,Actual LOR2 South Australian Region 19th January 2006
+2006-01-21 15:49:14,SA,LOR1,Actual  LOR1 SA Region - Sat 21 Jan 2006
+2006-03-19 06:12:24,SA,LOR2,Actual LOR2 South Australian Region 19th March 2006
+2006-03-21 07:30:47,SA,LOR2,Actual LOR2 South Australian Region 21th March 2006
+2006-03-27 06:19:49,SA,LOR2,Actual LOR2 South Australian Region 27th March 2006
+2006-03-28 06:34:26,SA,LOR2,Actual LOR2 South Australian Region Tues 28th March 2006
+2006-03-29 08:47:46,SA,LOR2,Actual LOR2 South Australian Region Wednesday 29th March 2006
+2006-05-08 06:52:43,SA,LOR2,Actual LOR2 South Australian Region -- Monday 8th May 2006
+2006-05-09 06:43:18,SA,LOR2,Actual LOR2 South Australian region -- Tuesday 9th May 2006
+2006-05-10 06:45:40,SA,LOR2,Actual LOR2 South Australian region -- Wed 10 May 2006
+2006-05-11 06:40:55,SA,LOR2,Actual LOR2 South Australian region -- Thursday 11 May 2006
+2006-05-12 06:32:51,SA,LOR2,Actual LOR2 South Australian region -- Friday12th May 2006
+2006-05-13 07:32:51,SA,LOR2,Actual LOR2 South Australian region -- Saturday13th May 2006
+2006-05-14 06:11:14,SA,LOR2,Actual LOR2 South Australian region -- Sunday14th May 2006
+2006-05-15 06:53:47,SA,LOR2,Actual LOR2 South Australian region -15 May 2006
+2006-05-16 06:43:12,SA,LOR2,Actual LOR2 South Australian region -16 May 2006
+2006-05-17 07:08:43,SA,LOR2,Actual LOR2 South Australian region -17 May 2006
+2006-05-18 07:25:17,SA,LOR2,Actual LOR2 South Australian Region -- Thurs 18th May 2006
+2006-05-23 09:30:42,TAS,LOR1,Actual LOR1 Tas Region Tuesday 23 May 2006 
+2006-06-27 07:29:09,SA,LOR2,Actual LOR2 South Australian Region -- Tuesday 27th June 2006
+2006-07-03 20:12:40,SA,LOR2,Actual LOR2 South Australian Region -- Monday 3rd July 2006
+2006-07-26 12:07:51,SA,LOR2,Actual LOR2 South Australian Region -- Wednesday 26th July 2006
+2006-08-09 14:29:55,SA,LOR2,Actual LOR2 South Australian Region - Wednesday 9 August 2006
+2006-08-10 08:18:40,SA,LOR2,Actual LOR2 South Australian Region - Thursday 10 August 2006
+2006-08-24 08:18:22,SA,LOR2,Actual LOR2 South Australian Region -- Thursday 24th August 2006
+2006-08-25 08:06:43,SA,LOR2,Actual LOR2 South Australian Region -- Friday 25th August 2006
+2006-10-03 07:42:35,SA,LOR2,Actual LOR2 South Australian Region --Tuesday 3 October 2006
+2006-10-04 08:00:11,SA,LOR2,Actual LOR2 South Australian Region --Wednesday 4 October 2006
+2006-10-05 08:10:39,SA,LOR2,Actual LOR2 South Australian Region -- Thu 5 Oct 2006
+2006-10-07 09:19:00,SA,LOR2,Actual LOR2 South Australian Region -- Sat 07 Oct 2006
+2006-10-08 09:32:03,SA,LOR2,Actual LOR2 South Australian Region -- Sun 8 Oct 2006
+2006-10-09 06:52:16,SA,LOR2,Actual LOR2 South Australian Region -- Monday 9 October 2006
+2006-10-10 09:09:30,SA,LOR2,Actual LOR2 South Australian Region -- Tuesday 10 October 2006
+2006-10-11 11:04:41,SA,LOR2,Actual LOR2 South Australian Region - Wednesday 11 October 2006
+2006-10-12 09:40:42,SA,LOR2,Actual LOR2 South Australian Region - Thursday 12 October 2006
+2006-10-15 07:00:58,SA,LOR2,Actual LOR2 South Australian Region - Sunday 15 October 2006
+2006-10-16 08:46:14,SA,LOR2,Actual LOR2 South Australian Region - Monday 16 October 2006
+2006-10-17 06:52:58,SA,LOR2,Actual LOR2 South Australian Region - Tue 17 Oct 2006
+2006-10-17 21:08:16,SA,LOR2,Actual LOR2 South Australian Region - Tue 17 Oct 2006
+2006-10-19 13:51:11,SA,LOR2,Actual LOR2 South Australian Region -- 19 October 2006
+2006-12-12 11:09:44,SA,LOR2,Actual LOR2 South Australian Region -- 12 Dec 2006
+2006-12-15 06:43:22,SA,LOR2,Actual LOR2 South Australian Region - Friday 15 January 2006
+2007-01-16 09:43:39,SA,LOR2,Actual LOR2 South Australian Region - Tuesday 16 January 2007.
+2007-03-14 07:33:39,SA,LOR2,Actual LOR2 South Australian Region -- 14 Mar 07 
+2007-05-21 11:49:50,SA,LOR2,Actual LOR2 South Australian Region -- 21 May 07
+2007-06-14 17:20:45,NSW,LOR1,ACTUAL LACK OF RESERVE CONDITION LOR1 in NSW Region Thursday 14th June 2007
+2007-06-15 19:10:32,NSW,LOR1,Actual LOR1 condition for the NSW region Friday 15 June 2007
+2007-06-19 18:04:58,NSW,LOR1,Actual LOR1 condition for the NSW region Friday 19 June 2007
+2007-07-06 09:23:51,SA,LOR2,Actual LOR2 South Australian Region -- 06 July 07
+2007-07-09 18:22:38,NSW,LOR1,Actual LOR 1 condition for the NSW region 9 July 2007
+2007-07-17 17:52:31,NSW,LOR1,Actual LOR 1 condition for the NSW region Tuesday 17 July 2007
+2007-07-17 18:30:37,NSW,LOR2,Actual LOR 2 condition for the NSW region Tuesday 17 July 2007
+2007-08-11 09:41:29,TAS,LOR1,Actual LOR1 condition for the Tasmanian Region Saturday 11th August 2007
+2007-08-12 09:26:46,SA,LOR2,Actual LOR2 South Australian region Sunday 12 August 07
+2007-08-21 17:44:43,QLD,LOR1,Actual LOR1 condition for the QLD Region Tuesday 21 July 2007
+2007-12-06 12:50:01,VIC,LOR1,Actual LOR1 condition for the VIC Region Thursday 6 December 2007
+2007-12-27 07:33:44,SA,LOR2,Actual LOR2 South Australian region - - Thurs 27 Dec 07
+2007-12-30 15:45:35,SA,LOR1,Actual LOR1 condition for the SA Region Sun 30 Dec 2007
+2008-04-06 11:36:07,SA,LOR2,Actual LOR2 South Australian Region - Sunday 6 April 2008
+2008-04-22 10:50:24,SA,LOR2,Actual LOR2 South Australian Region - 22 April 2008
+2008-05-13 19:27:06,NSW,LOR1,Actual LOR 1 condition for the NSW region Tuesday 13 May 2008
+2008-06-18 21:07:22,SA,LOR2,Actual LOR2 South Australian Region - 18th June 2008
+2008-07-23 18:14:40,VIC,LOR2,Actual LOR 2 Vic region - 23 July 2008
+2008-07-23 21:01:26,VIC,LOR2,"Actual LOR 2  Vic region    (2) ,  23 July 2008"
+2008-09-04 07:44:20,SA,LOR2,Actual LOR2 South Australian Region - 4 Sept 2008
+2008-09-05 08:41:47,SA,LOR2,Actual LOR2 South Australian Region - 5 Sept 2008
+2008-09-07 07:10:00,SA,LOR2,Actual LOR2 South Australian Region - 7 Sept 2008
+2008-09-08 15:39:22,SA,LOR2,Actual LOR2 - South Australian Region - 8 September  2008
+2008-10-04 07:44:19,SA,LOR2,Actual LOR2 South Australian region - - Sat  4 Oct 2008
+2008-10-18 14:03:17,SA,LOR2,Actual LOR2 - South Australian Region - 18 October 2008
+2008-10-31 09:10:17,NSW,LOR1,Actual LACK OF RESERVE CONDITION LOR1 in NSW Region Friday 31 October
+2008-10-31 11:40:39,NSW,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in NSW Region Friday 31 October 2008
+2008-11-06 18:27:17,SA,LOR2,Actual LOR2 SA Region 06/11/2008
+2008-12-17 07:53:49,SA,LOR2,Actual LOR 2 in SA Region  - Wed 17th Dec 2008
+2009-01-19 14:12:31,SA,LOR1,ACTUAL LACK OF RESERVE CONDITION LOR1 in SA Region 19 January 2009
+2009-01-21 07:10:57,SA,LOR2,Actual LOR2 South Australian Region - 21 January 2009
+2009-01-27 14:29:22,SA,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in South Australia Region 27 January 2009.
+2009-01-28 12:09:09,SA,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in South Australia Region - Wednesday 28 January 2009.
+2009-01-28 13:34:03,SA,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in SA Region Wednesday 28 January 2009
+2009-01-28 13:43:28,VIC,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in Victoria Region - Wednesday 28 January 2009.
+2009-01-28 14:05:23,VIC,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in Victoria Region Wednesday 28 January 2009
+2009-01-28 20:33:45,SA,LOR1,ACTUAL LACK OF RESERVE CONDITION (LOR1) in South Australia Region 28 January 2009.
+2009-01-29 08:49:06,VIC,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in Victoria Region Thursday 29 January 2009
+2009-01-29 11:24:30,VIC,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in Victoria Region Thursday 29 January 2009
+2009-01-29 12:46:40,VIC,,Actual LACK OF RESERVE CONDITION (LOR) in the Victoria Region - Thursday 29 January 2009
+2009-01-29 13:54:07,SA,,Actual LACK OF RESERVE CONDITION (LOR) in the South Australia Region - Thursday 29 January 2009
+2009-01-30 11:12:49,VIC,LOR2,Actual LACK OF RESERVE CONDITION LOR2 in Victoria Region Friday 30 January 2009
+2009-01-30 12:16:17,SA,LOR2,Actual Lack of Reserve Condition (LOR2) for SA Region for Friday 30th January 2009
+2009-01-30 12:37:06,VIC,,Actual LACK OF RESERVE CONDITION (LOR) in the Victoria Region - Friday 30 January 2009
+2009-01-30 12:56:14,SA,,Actual LACK OF RESERVE CONDITION (LOR) in the SA Region - Friday 30 January 2009
+2009-01-31 12:35:39,SA,LOR2,Actual Lack of Reserve Condition (LOR2) for SA Region for Saturday 31 January 2009
+2009-02-06 14:59:37,SA,LOR1,Actual LACK OF RESERVE CONDITION (LOR1) in the SA Region - Friday 6 February 2009
+2009-02-07 13:55:44,VIC,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in Vic Region - Staurday 7 February 2009
+2009-03-11 17:52:34,SA,LOR2,Actual LOR2 South Australian Region - 11 March 2009
+2009-03-31 16:38:16,SA,LOR2,Actual LOR 2 in SA Region  - Tues 31st Mar 2009
+2009-04-23 15:50:39,SA,LOR2,Actual LOR2 South Australian Region - 23 April 2009
+2009-05-12 06:06:50,SA,LOR2,Actual LOR2 South Australian Region - 12 May 2009
+2009-05-12 21:50:24,SA,LOR2,Actual LOR2 South Australian Region - 12 May 2009.
+2009-05-13 09:42:08,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 13 May 2009.
+2009-06-25 10:27:45,SA,LOR2,Actual LOR2 South Australian Region - 25 June 2009.
+2009-06-26 09:53:19,SA,LOR2,Actual LOR2 South Australian Region - 26 June 2009.
+2009-07-06 09:02:37,SA,LOR2,Actual LOR2 South Australia Region - Monday 6/07/09
+2009-07-07 10:34:36,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 7/07/09
+2009-07-21 19:37:47,SA,LOR2,Actual LOR2 South Australian Region 21 July 2009
+2009-07-22 00:00:26,SA,LOR2,Actual LOR2 South Australian Region 21- 22 July 2009
+2009-07-22 08:42:05,SA,LOR2,Actual LOR2 South Australia Region 22 July 2009
+2009-07-22 18:55:36,SA,LOR2,Actual LOR2 South Australia Region 22 July 2009
+2009-07-28 07:48:52,SA,LOR2,Actual LOR2 South Australia Region 22 July 2009
+2009-07-29 07:22:18,SA,LOR2,Actual LOR2 South Australia Region - 29 July 2009
+2009-07-30 08:46:01,SA,LOR2,Actual LOR2 South Australia Region - 30 July 2009
+2009-08-04 07:09:05,SA,LOR2,Actual LOR2 South Australian Region 4 August 2009
+2009-08-05 07:12:14,SA,LOR2,Actual LOR2 South Australia Region -  5 August 2009
+2009-08-11 08:05:25,SA,LOR2,Actual LOR2 South Australia Region - 11 August 2009
+2009-08-12 07:21:14,SA,LOR2,Actual LOR2 South Australia Region - 12 August 2009
+2009-08-18 07:03:25,SA,LOR2,Actual LOR2 South Australia Region - 18 August 2009
+2009-08-28 07:53:07,SA,LOR2,Actual LOR2 South Australia Region -  28 August 2009
+2009-08-31 10:23:09,SA,LOR2,Actual LOR2 South Australia Region - Monday 31 August 2009
+2009-08-31 16:35:51,SA,LOR2,Actual LOR2 South Australia Region - Monday 31 August 2009
+2009-09-01 09:29:56,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 1 August 2009
+2009-09-01 11:51:35,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 1 September 2009
+2009-09-04 08:57:35,SA,LOR2,Actual LOR2 South Australia Region - Friday  4th September 2009
+2009-09-08 10:45:26,SA,LOR2,Actual LOR2 South Australia Region -  8 September 2009
+2009-09-09 08:11:45,SA,LOR2,Actual LOR2 South Australia Region -  9 September 2009
+2009-09-10 07:52:38,SA,LOR2,Actual LOR2 South Australia Region -  10 September 2009
+2009-09-15 07:10:41,SA,LOR2,Actual LOR2 South Australia Region -  15 September 2009
+2009-09-18 07:05:52,SA,LOR2,Actual LOR2 South Australia Region -  18 September 2009
+2009-09-22 08:08:46,SA,LOR2,Actual LOR2 South Australia Region -  22 September 2009
+2009-09-23 07:22:12,SA,LOR2,Actual LOR2 South Australia Region -  23 September 2009
+2009-09-23 13:01:22,SA,LOR2,Actual LOR2 South Australia Region -  23 September 2009
+2009-10-05 06:14:52,SA,LOR2,Actual LOR2 South Australia Region -  5 October 2009
+2009-10-05 14:53:11,SA,LOR2,Actual LOR2 South Australia Region -  5 October 2009
+2009-10-07 07:25:50,SA,LOR2,Actual LOR2 South Australia Region -  7 October 2009
+2009-10-09 05:08:58,SA,LOR2,Actual LOR2 South Australia Region -  9 October 2009
+2009-10-16 07:17:51,SA,LOR2,Actual LOR2 South Australia Region - Friday 16 October 2009
+2009-10-19 09:02:12,SA,LOR2,Actual LOR2 South Australia Region - 19th October 2009
+2009-10-21 05:44:30,SA,LOR2,Actual LOR2 South Australia Region - 21st October 2009
+2009-10-21 08:06:37,SA,LOR2,Actual LOR2 South Australia Region - 21st October 2009
+2009-10-23 07:27:02,SA,LOR2,Actual LOR2 South Australia Region - Friday 23 October 2009
+2009-10-27 08:42:05,SA,LOR2,Actual LOR2 South Australia Region - 27 October 2009
+2009-10-28 07:25:09,SA,LOR2,Actual LOR2 South Australia Region - 28 October 2009
+2009-10-29 09:20:53,SA,LOR2,Actual LOR2 South Australia Region - 29 October 2009
+2009-10-30 10:28:23,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - 30 Oct 2009
+2009-10-30 12:54:41,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - 30 Oct 2009
+2009-11-02 12:49:56,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - Monday 2 November 2009
+2009-11-06 07:25:02,SA,LOR2,Actual LOR2 South Australia Region - Friday 06 November 2009
+2009-11-09 07:20:09,SA,LOR2,Actual LOR2 for SA Region - 9 Nov 2009
+2009-11-12 07:03:49,SA,LOR2,Actual LOR2 South Australia Region - Thursday 12 November 2009
+2009-11-12 13:48:31,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - Thursday 12 November 2009
+2009-11-13 12:35:53,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - Friday 13 November 2009
+2009-11-13 13:56:19,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - Friday 13 November 2009
+2009-11-14 14:21:53,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region - Saturday 14 November 2009
+2009-11-20 09:21:25,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region - Friday 20 November 2009
+2009-11-20 12:37:45,NSW,LOR2,Actual LOR 2 in NSW region Friday 20th November 2009.
+2009-12-07 14:53:42,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region
+2009-12-24 13:08:49,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region
+2009-12-30 16:27:41,SA,LOR1,Actual LOR 1 South Australia Region 30 December 2009
+2009-12-31 13:08:27,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region Thursday 31 Dec 09
+2010-01-08 15:13:26,SA,LOR1,Actual LOR 1 South Australia Region 8 January 2010
+2010-01-10 07:40:49,SA,LOR2,Actual LOR2 South Australia Region - Sunday 10 January 2010
+2010-01-10 13:06:43,SA,LOR1,Actual LOR 1 South Australia Region 10 January 2010
+2010-01-11 12:26:47,SA,LOR1,Actual LOR 1 South Australia Region 11 January 2010
+2010-01-21 18:32:00,SA,LOR1,Actual LOR 1 Condition for South Australia 21 January 2010
+2010-02-08 11:28:24,SA,LOR1,Actual LOR 1 Condition for South Australia 8 February 2010
+2010-02-08 15:45:28,VIC,LOR1,Actual LOR 1 Condition for the Victoria region 8 February 2010
+2010-02-09 12:08:23,SA,LOR1,Actual LOR 1 South Australia Region 9 February 2010
+2010-02-09 16:36:35,SA,LOR2,Actual LOR 2 South Australia Region 9 February 2010
+2010-02-10 11:39:06,SA,LOR1,Actual LOR 1 South Australia Region 10 February 2010
+2010-03-15 10:40:11,SA,LOR2,Actual LOR2 South Australia Region - Monday 15 March 2010
+2010-03-16 09:40:24,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 16 March 2010
+2010-03-17 10:21:40,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 17 March 2010
+2010-03-18 10:27:07,SA,LOR2,Actual LOR2 South Australia Region - Thursday 18 March 2010
+2010-03-18 13:43:08,SA,LOR1,Actual LOR 1 South Australia Region 18 March 2010
+2010-03-20 09:44:53,SA,LOR2,Actual LOR2 South Australia Region - Saturday 20 March 2010
+2010-03-20 15:08:37,SA,LOR2,Actual LOR2 South Australia Region - Saturday 20 March 2010
+2010-03-21 09:07:07,SA,LOR2,Actual LOR2 South Australia Region - Sunday 21 March 2010
+2010-03-22 10:21:32,SA,LOR2,Actual LOR2 South Australia Region - Monday 22 March 2010
+2010-03-23 06:11:53,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 23 March 2010
+2010-03-23 11:02:38,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 23 March 2010
+2010-03-23 22:30:47,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 23 March 2010
+2010-03-24 00:48:03,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 24 March 2010
+2010-03-24 12:21:34,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 24 March 2010
+2010-03-24 20:40:59,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 24 March 2010
+2010-03-25 14:55:44,SA,LOR2,Actual LOR2 South Australia Region - Thursday 25 March 2010
+2010-03-26 05:35:43,SA,LOR2,Actual LOR2 South Australia Region - 26 March 2010
+2010-03-26 19:57:38,SA,LOR2,Actual LOR2 South Australia Region - 26 March 2010
+2010-03-28 05:51:24,SA,LOR2,Actual LOR2 South Australia Region - 28 March 2010
+2010-03-28 08:58:14,SA,LOR2,Actual LOR2 South Australia Region - 28 March 2010
+2010-03-30 13:11:58,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 30 March 2010"
+2010-03-31 09:18:17,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 30 March 2010"
+2010-04-08 07:26:08,SA,LOR2,Actual LOR2 South Australia Region - 8 April 2010
+2010-04-08 08:41:53,SA,LOR2,Actual LOR2 South Australia Region - 8 April 2010
+2010-04-09 07:06:15,SA,LOR2,Actual LOR2 South Australia Region - 9 April 2010
+2010-04-09 14:19:44,SA,LOR2,Actual LOR2 South Australia Region - 9 April 2010
+2010-04-10 07:17:01,SA,LOR2,Actual LOR2 South Australia Region - 10 April 2010
+2010-04-12 07:04:59,SA,LOR2,Actual LOR2 South Australia Region - 12 April 2010
+2010-04-13 08:01:26,SA,LOR2,Actual LOR2 South Australia Region - 13 April 2010
+2010-04-14 07:23:52,SA,LOR2,Actual LOR2 South Australia Region - 14 April 2010
+2010-04-15 08:09:28,SA,LOR2,Actual LOR2 South Australia Region - 15 April 2010
+2010-04-16 07:22:42,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 16 April 2010"
+2010-04-17 06:39:36,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 17 April 2010"
+2010-04-17 12:11:00,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 17 April 2010"
+2010-04-18 07:02:10,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 18 April 2010"
+2010-04-20 08:36:15,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 20 April 2010"
+2010-04-21 07:56:33,SA,LOR2,Actual LOR2 South Australia Region -  21 April 2010
+2010-04-21 14:18:52,SA,LOR1,Actual LOR 1 Condition for South Australia 21 April 2010
+2010-04-22 09:45:42,SA,LOR2,Actual LOR2 South Australia Region - 26 March 2010
+2010-05-03 09:52:51,SA,LOR2,Actual LOR2 South Australia Region - 3 May 2010
+2010-05-04 07:10:39,SA,LOR2,Actual LOR2 South Australia Region - 4 May 2010
+2010-05-04 19:17:58,SA,LOR2,Actual LOR2 South Australia Region - 4 May 2010
+2010-05-05 07:23:15,SA,LOR2,Actual LOR2 South Australia Region -  5 May 2010
+2010-05-05 15:09:57,SA,LOR2,Actual LOR2 South Australia Region -  5 May 2010
+2010-05-20 10:28:36,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 20 May 2010"
+2010-06-07 08:07:11,SA,LOR2,Actual LOR2 South Australia Region - 7 June 2010
+2010-06-08 07:24:16,SA,LOR2,Actual LOR2 South Australia Region - 8 June 2010
+2010-09-17 08:53:49,SA,LOR2,Actual LOR2 South Australia Region - 17 September 2010
+2010-09-18 22:59:36,SA,LOR2,Actual LOR2 South Australia Region - 18 September 2010
+2010-09-20 18:30:59,SA,LOR2,Actual LOR2 South Australia Region - 20 September 2010
+2010-09-21 18:52:02,SA,LOR2,Actual LOR2 South Australia Region - 21 September 2010
+2010-09-22 12:09:38,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 22 September 2010"
+2010-09-23 19:28:59,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, Thursday, 23 September 2010"
+2010-09-25 00:12:31,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, Saturday, 25 September 2010"
+2010-09-25 12:58:06,SA,LOR2,Actual LOR2 SA Region - 25 Sep 2010
+2010-09-30 18:36:31,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region 30 September 2010
+2010-10-05 10:02:20,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 5 October 2010
+2010-10-07 07:45:46,SA,LOR2,Actual LOR2 South Australia Region - Thursday 7 October 2010
+2010-10-13 06:53:55,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region 13 October 2010
+2010-10-13 11:09:54,SA,LOR2,Actual LACK OF RESERVE LEVEL 2  (LOR2) in the SA Region 13 October 2010
+2010-11-08 06:22:27,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 8 November 2010"
+2010-11-12 08:18:58,SA,LOR2,Actual LOR2 South Australia Region - Friday 12 November 2010
+2010-11-14 07:52:27,SA,LOR2,Actual LOR2 SA Region - 14 Nov 2010
+2010-11-20 07:12:38,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 20 November 20"
+2010-11-21 08:31:24,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 21 November 2010"
+2010-11-22 11:55:57,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region - 22/11/2010
+2010-11-22 14:00:56,SA,LOR2,Actual declaration of LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - 22/11/2010
+2010-11-23 14:54:05,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region - 23/11/2010
+2010-11-23 15:46:58,SA,LRC,Actual Low Reserve Condition (LRC) in South Australia Region - 23/11/2010
+2010-11-27 05:09:52,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 27 November 2010"
+2010-11-28 05:11:48,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 28 November 2010"
+2010-11-29 05:42:42,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 29 November 2010"
+2010-12-01 07:18:30,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 01 December 2010"
+2010-12-02 06:42:40,SA,LOR2,Actual LOR2 South Australia Region - 2 December 2010
+2010-12-07 08:32:47,SA,LOR2,Actual LOR2 South Australia Region - 7 December 2010
+2010-12-09 05:13:07,SA,LOR2,Actual LOR2 South Australia Region - 9 December 2010
+2011-01-27 12:02:00,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region Thursday 27 January 2011 
+2011-01-31 13:37:33,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the SA Region Monday 31 January 2011
+2011-01-31 15:45:47,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region Monday 31 January 2011
+2011-02-01 11:50:52,VIC,LOR1,"Actual LACK OF RESERVE LEVEL 1 (LOR1) in the VIC Region Tuesday, 1 February 2011"
+2011-02-01 15:15:52,NSW,LOR1,"Actual declaration of LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region  Tuesday, 1 February 2011"
+2011-02-01 16:29:04,SA,LOR2,Actual LOR2 South Australia Region - 1 February 2011
+2011-02-02 08:21:34,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 2 February 2011"
+2011-02-02 14:37:20,NSW,LOR1,"Actual - LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region - Wednesday, 2 February 2011"
+2011-02-03 07:16:33,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 3 February 2011"
+2011-02-03 14:58:17,NSW,LOR1,"Actual - LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region - Thursday, 3 February 2011"
+2011-03-08 09:50:43,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 8 March 2011"
+2011-03-08 15:09:33,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 8 March 2011"
+2011-03-21 10:22:53,SA,LOR2,Actual LOR2 South Australia Region - Monday 21 March 2011
+2011-03-25 05:20:28,SA,LOR2,Actual LOR2 South Australia Region - Friday 25 March 2011
+2011-03-30 06:05:19,SA,LOR2,Actual LOR2 South Australia Region - Wed 30 March 2011
+2011-04-17 15:53:00,SA,LOR2,Actual LOR2 South Australia Region - Sunday 17 April 2011
+2011-05-08 06:22:34,SA,LOR2,Actual LOR2 South Australia Region - Sunday 8th May 2011
+2011-05-09 15:03:07,SA,LOR2,Actual LOR2 South Australia Region - Monday 9th May 2011
+2011-05-17 13:21:26,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 17th May 2011
+2011-05-20 14:42:03,SA,LOR2,Actual LOR2 South Australia Region - Friday 20 May 2011
+2011-05-24 10:21:21,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 24 May 2011
+2011-06-09 09:12:50,SA,LOR2,Actual LOR2 South Australia Region - Thursday 9 June 2011
+2011-06-28 07:31:41,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 28 June 2011
+2011-07-02 10:47:04,SA,LOR2,Actual LOR2 South Australia Region - Saturday 2 July 2011
+2011-07-26 06:59:10,SA,LOR2,Actual LOR2 South Australia Region - Tues 27 July 2011.
+2011-07-27 10:06:56,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 27 July 2011.
+2011-07-27 22:01:30,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 27 July 2011.
+2011-08-01 15:11:53,SA,LOR2,Actual LOR2 South Australia Region - Monday 01 August  2011.
+2011-08-02 07:21:29,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 02 August  2011.
+2011-08-02 18:56:05,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 02 August 2011.
+2011-08-05 07:15:39,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 5 August 2011."
+2011-08-11 10:23:09,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 11 August 2011."
+2011-08-31 09:43:24,SA,LOR2,"Actual Lack of Reserve Level 2 (LOR2) in the South Australia Region - Wednesday, 31 August 2011"
+2011-09-01 10:32:48,SA,LOR2,"Actual Lack of Reserve Level 2 (LOR2) in the South Australia Region - Thursday, 01 September 2011"
+2011-09-08 13:46:49,SA,LOR2,Actual LOR2 South Australia Region -  8 Sept 2011
+2011-09-12 19:21:11,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2011-09-12 23:43:47,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2011-09-14 08:56:18,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2011-09-21 08:11:41,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 21 September 2011"
+2011-09-28 16:18:32,SA,LOR2,Actual LOR2 South Australia Region -  28 September 2011
+2011-09-29 07:05:49,SA,LOR2,Actual LOR2 South Australia Region -  29 September 2011
+2011-10-03 08:59:33,SA,LOR2,Actual LOR2 South Australia Region -  03 October 2011
+2011-10-04 14:11:45,SA,LOR2,Actual LOR2 South Australia Region -  4 October 2011
+2011-10-17 09:21:41,SA,LOR2,Actual LOR2 South Australia Region -  17 October 2011
+2011-10-18 12:42:41,SA,LOR2,Actual LOR2 South Australia Region -  18 October 2011
+2011-10-19 08:32:37,SA,LOR2,Actual LOR2 South Australia Region -  19 October 2011
+2011-10-19 23:36:34,SA,LOR2,Actual LOR2 South Australia Region -  19 October 2011
+2011-10-20 05:34:03,SA,LOR2,Actual LOR2 South Australia Region -  20 October 2011
+2011-11-08 11:50:27,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region
+2011-11-08 15:11:21,NSW,LOR2,Actual declaration of LACK OF RESERVE LEVEL 2 (LOR2) in the NSW Region
+2011-11-09 13:20:57,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region 9 November 2011
+2011-11-09 15:13:03,NSW,LOR2,Actual declaration of LACK OF RESERVE LEVEL 2 (LOR2) in the NSW Region - 09 November 2011
+2011-11-10 09:51:12,SA,LOR2,Actual LOR2 South Australia Region - 10 November 2011
+2011-11-14 14:44:31,NSW,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the NSW Region - 14 Nov 2011
+2011-11-15 08:05:26,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Tuesday, 15 November 2011"
+2011-11-29 07:24:15,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Tuesday, 29 November 2011"
+2012-01-01 15:26:11,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2012-02-01 08:07:43,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Wednesday, 1 February 2012"
+2012-02-09 06:56:29,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Thursday, 9 February 2012"
+2012-03-05 06:19:33,SA,LOR2,Actual LOR2 South Australia Region -  5 Mar 2012
+2012-03-15 05:08:32,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Thursday, 15 March 2012"
+2012-03-15 14:11:08,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Thursday, 15 March 2012"
+2012-03-16 16:30:49,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the South Australia Region - Friday, 16 March 2012"
+2012-03-29 05:06:47,SA,LOR2,"Actual LACK OF RESERVE LEVEL 2 (LOR2) in the SA Region - Thursday, 29 March 2012"
+2012-04-02 16:46:47,SA,LOR2,Actual LOR2 South Australia Region - 2nd April 2012
+2012-04-03 18:53:49,SA,LOR2,Actual LOR2 South Australia Region - 3rd April 2012
+2012-04-04 19:17:03,SA,LOR2,Actual LOR2 South Australia Region - 4th April 2012
+2012-04-11 11:00:16,SA,LOR2,Actual LOR2 South Australia Region - 11th April 2012
+2012-04-11 19:04:28,SA,LOR2,Actual LOR2 South Australia Region - 11th April 2012
+2012-04-12 04:22:55,SA,LOR2,Actual LOR2 South Australia Region - 12th April 2012
+2012-04-12 10:58:18,SA,LOR2,Actual LOR2 South Australia Region - 12th April 2012
+2012-04-13 12:16:45,SA,LOR2,Actual LOR2 South Australia Region - 13th April 2012
+2012-04-14 07:33:04,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 14th April 2012"
+2012-04-14 15:17:33,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 14th April 2012"
+2012-04-14 19:02:20,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 14th April 2012"
+2012-04-15 18:48:41,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 15th April 2012"
+2012-04-17 10:22:50,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 17th April 2012"
+2012-04-18 12:04:21,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 18 April 2012"
+2012-05-16 07:40:37,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 16 May 2012"
+2012-05-28 08:53:27,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 28 May 2012"
+2012-05-29 09:31:06,SA,LOR2,Actual LOR2 South Australia Region - 29 May 2012
+2012-05-30 14:05:32,SA,LOR2,Actual LOR2 South Australia Region - 29 May 2012
+2012-06-04 08:23:30,SA,LOR2,Actual LOR2 South Australia Region - 4 June 2012
+2012-06-06 12:03:31,SA,LOR2,Actual LOR2 South Australia Region - 6 June 2012
+2012-06-18 11:39:23,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 18 June 2012."
+2012-06-18 22:03:04,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 18 June 2012."
+2012-06-19 08:34:58,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 19 June 2012."
+2012-06-26 09:39:33,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 26 June 2012."
+2012-06-27 13:19:14,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 27 June 2012."
+2012-06-27 23:41:17,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 27 June 2012."
+2012-06-29 09:20:48,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 29 June 2012."
+2012-06-29 18:19:08,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 29 June 2012."
+2012-07-03 09:40:41,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 3 July 2012
+2012-07-19 12:23:04,SA,LOR2,Actual LOR2 South Australia Region - Thurs 19 July 2012
+2012-08-13 11:06:35,SA,LOR2,Actual LOR2 South Australia Region - Monday 13 August 2012
+2012-08-14 07:16:51,SA,LOR2,Actual LOR2 South Australia Region - Tuesday 14 August 2012
+2012-08-15 09:16:18,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 15 August 2012
+2012-08-15 16:00:01,SA,LOR2,Actual LOR2 South Australia Region - Wednesday 15 August 2012
+2012-08-18 06:54:37,SA,LOR2,Actual LOR2 South Australia Region - Saturday 18 August 2012
+2012-08-19 06:10:02,SA,LOR2,Actual LOR2 South Australia Region - Sunday 19 August 2012
+2012-08-19 17:50:24,SA,LOR2,Actual LOR2 South Australia Region - Sunday 19 August 2012
+2012-08-20 20:05:19,SA,LOR2,Actuall LOR2 South Australia Region - Monday 20 August 2012
+2012-08-21 08:34:06,SA,LOR2,Actuall LOR2 South Australia Region - Tuesday 21 August 2012
+2012-08-21 22:35:23,SA,LOR2,Actuall LOR2 South Australia Region - Tuesday 21 August 2012
+2012-08-27 08:23:12,SA,LOR2,Actual LOR2 South Australia Region - Monday 27 August 2012
+2012-09-01 06:35:36,SA,LOR2,Actual LOR2 South Australia Region - Sat 1 Sept 2012
+2012-09-01 19:40:06,SA,LOR2,Actual LOR2 South Australia Region - Sat 1 Sept 2012
+2012-09-03 14:43:19,SA,LOR2,Actual LOR2 South Australia Region - Monday 3rd Sept 2012
+2012-09-10 06:11:11,SA,LOR2,Actual LOR2 South Australia Region - 10 September 2012
+2012-09-11 06:05:33,SA,LOR2,Actual LOR2 South Australia Region - 11 September 2012
+2012-09-11 13:48:08,SA,LOR2,Actual LOR2 South Australia Region - 11 September 2012
+2012-10-09 09:40:31,SA,LOR2,Actual LOR2 South Australia Region - 9 October 2012
+2012-11-13 12:15:47,SA,LOR2,Actual LOR2 South Australia Region - 9 October 2012
+2012-11-26 13:45:02,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 26 Nov 2012"
+2012-11-27 12:03:02,SA,LOR2,Actual LOR2 South Australia Region - 27 Nov 2012
+2012-11-28 06:03:06,SA,LOR2,Actual LOR2 South Australia Region - 28 Nov 2012
+2012-11-29 15:28:27,VIC,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the Victorian Region - 29 November 2012
+2012-12-02 08:14:29,SA,LOR2,Actual LOR2 South Australia Region - 02 Dec 2012
+2012-12-03 07:33:28,SA,LOR2,Actual LOR2 South Australia Region - 03 Dec 2012
+2012-12-11 10:42:41,SA,LOR2,Actual LOR2 South Australia Region
+2012-12-12 14:08:35,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2012-12-12 16:21:31,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region
+2012-12-13 08:20:32,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 13 December 2012."
+2013-01-07 21:42:09,SA,LOR2,Actual LOR2 South Australia Region -  7 Jan 2013
+2013-01-29 13:52:31,QLD,,Actual LACK OF RESERVE LEVEL 1 in the QLD Region
+2013-01-29 16:23:20,QLD,LOR2,Actual declaration of LACK OF RESERVE LEVEL 2 (LOR2) in the QLD Region
+2013-02-11 07:26:54,SA,LOR2,Actual LOR2 South Australia Region -  11 February 2013
+2013-02-11 13:08:41,SA,LOR2,Actual LOR2 South Australia Region -  11 February 2013
+2013-02-15 11:15:03,SA,LOR2,Actual LOR2 South Australia Region -  Friday 15th February 2013
+2013-03-06 08:24:23,SA,LOR2,Actual LOR2 South Australia Region -  Wednesday 6th March 2013
+2013-03-06 17:03:04,SA,LOR2,Actual LOR2 South Australia Region -  Wednesday 6th March 2013
+2013-03-07 07:04:05,SA,LOR2,Actual LOR2 South Australia Region -  7 Mar 2013
+2013-03-07 18:32:51,SA,LOR2,Actual LOR2 South Australia Region -  Thursday 7th March 2013
+2013-03-08 06:41:51,SA,LOR2,Actual LOR2 South Australia Region -  8 Mar 2013
+2013-03-08 17:22:38,SA,LOR2,Actual LOR2 South Australia Region -  8 Mar 2013
+2013-03-11 09:24:17,SA,LOR2,Actual LOR2 South Australia Region -  11 March 2013
+2013-03-11 19:49:45,SA,LOR2,Actual LOR2 South Australia Region -  11 March 2013
+2013-03-12 07:36:03,SA,LOR2,Actual LOR2 South Australia Region -  12 March 2013
+2013-03-12 18:31:34,SA,LOR2,Actual LOR2 South Australia Region -  12 March 2013
+2013-03-12 19:56:13,SA,LOR2,Actual LOR2 South Australia Region -  12 March 2013
+2013-03-14 02:04:28,SA,LOR2,Actual LOR2 South Australia Region -  14 March 2013
+2013-03-14 05:30:46,SA,LOR2,Actual LOR2 South Australia Region - 14 March 2013
+2013-03-15 01:57:42,SA,LOR2,Actual LOR2 South Australia Region - 15 March 2013
+2013-03-15 05:48:30,SA,LOR2,Actual LOR2 South Australia Region - 15 March 2013
+2013-03-16 01:07:31,SA,LOR2,Actual LOR2 South Australia Region - 16 March 2013
+2013-03-17 16:07:37,SA,LOR2,Actual LOR2 South Australia Region - 17 Mar 2013
+2013-03-18 06:54:55,SA,LOR2,Actual LOR2 South Australia Region - 18 Mar 2013
+2013-03-18 23:34:21,SA,LOR2,Actual LOR2 South Australia Region - 18 Mar 2013
+2013-03-19 11:01:19,SA,LOR2,Actual LOR2 South Australia Region - 19 Mar 2013
+2013-03-20 11:10:11,SA,LOR2,Actual LOR2 South Australia Region - 20 Mar 2013
+2013-03-20 23:40:07,SA,LOR2,Actual LOR2 South Australia Region - 20 Mar 2013
+2013-03-21 07:09:25,SA,LOR2,Actual LOR2 South Australia Region - 21 Mar 2013
+2013-03-21 22:03:37,SA,LOR2,Actual LOR2 South Australia Region - 21 Mar 2013
+2013-03-24 17:00:12,SA,LOR2,Actual LOR2 South Australia Region - 24 March 2013
+2013-04-09 07:49:52,TAS,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the Tasmania Region 9 April 2013
+2013-04-23 19:13:46,,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Austrailian Region 23 April 2013
+2013-04-26 17:38:50,SA,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the South Australia Region 26 April 2013
+2013-05-01 08:24:42,SA,LOR2,Actual LOR2 South Australia Region -  1 May 2013
+2013-05-06 10:32:31,TAS,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the Tasmania Region 6 May 2013
+2013-05-06 12:10:41,TAS,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the Tasmania Region 6 May 2013
+2013-05-07 07:21:28,TAS,LOR1,Actual LACK OF RESERVE LEVEL 1 (LOR1) in the Tasmania Region 7 May 2013
+2013-05-10 15:28:36,SA,LOR2,Actual LOR2 South Australia Region - 10 May 2013
+2013-06-03 07:21:55,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia region. Monday 3 June 2013
+2013-06-04 18:06:02,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia region. Tuesday 4 June 2013 (PDPASA)
+2013-07-04 16:59:49,SA,LOR2,"Actual Lack Of Reserve Level 2 (LOR2) in the South Australia region. Thursday, 4 July 2013"
+2013-08-20 18:54:49,SA,LOR1,Actual LOR1 South Australia  10 August 1830hrs - 1930hrs 
+2013-08-20 19:44:52,SA,LOR1,Actual LOR1 South Australia  20 August 1830hrs - 1930hrs
+2013-08-20 19:47:26,SA,LOR1,Actual LOR1 South Australia  20 August 1930hrs - 2000hrs
+2013-08-20 20:17:01,SA,LOR1,Actual LOR1 South Australia  20 August 2000hrs - 2030hrs
+2013-08-31 05:34:50,SA,LOR2,Actual LOR2 South Australia Region - Saturday 31 Aug 2013
+2013-09-01 08:34:54,SA,LOR2,Actual LOR2 South Australia Region - Sun 1 Sep 2013
+2013-09-01 17:22:44,SA,LOR2,Actual LOR2 South Australia Region - Sun 1 Sep 2013
+2013-09-08 12:20:53,SA,LOR2,"Actual LOR2 South Australia Region Sunday, 8 September 2013"
+2013-09-08 19:29:15,SA,LOR2,"Actual LOR2 South Australia Region Sunday, 8 September 2013"
+2013-10-01 17:28:49,SA,LOR2,Actual LOR2 South Australia Region - 01 October 2013
+2013-11-22 09:05:23,SA,LOR2,Actual LOR2 South Australia Region - 22 November 2013
+2013-12-14 07:37:49,SA,LOR2,Actual LOR2 South Australia Region - Saturday 14 December 2013
+2014-01-14 18:50:57,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic Region Region 14 Jan 2014
+2014-01-15 12:37:28,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic Region Region 15 Jan 2014
+2014-01-15 12:40:52,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region Region 15 Jan 2014
+2014-01-15 12:47:38,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Vic Region Region 15 Jan 2014
+2014-01-16 13:45:06,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic Region Region 16 Jan 2014
+2014-02-01 17:57:23,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region Region 01 February 2014
+2014-02-15 11:43:50,SA,LOR2,Actual LOR2 South Australia Region - Saturday 15 February 2014
+2014-02-16 07:19:21,SA,LOR2,Actual LOR2 South Australia Region - Sun 16 Feb 2014
+2014-03-16 04:36:43,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Tasmania Region 16/03/2014
+2014-04-01 16:47:32,SA,LOR2,Actual LOR2 South Australia Region
+2014-05-09 09:17:50,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 9 May 2014."
+2014-05-10 08:17:35,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 10 May 2014."
+2014-05-11 06:09:05,SA,LOR2,Actual LOR2 South Australia Region - 11 May 2014.
+2014-05-12 06:13:30,SA,LOR2,Actual LOR2 South Australia Region - 12 May 2014.
+2014-05-14 14:07:46,SA,LOR2,Actual LOR2 South Australia Region - 14 May 2014.
+2014-05-23 05:42:01,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 23 May 2014"
+2014-05-24 06:08:21,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 24 May 2014"
+2014-05-25 08:29:22,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 25 May 2014"
+2014-05-30 14:05:30,SA,LOR2,Actual LOR2 South Australia Region - 30/05/2014
+2014-06-01 07:17:29,SA,LOR2,Actual LOR2 South Australia Region - 01/06/2014
+2014-06-07 11:12:23,SA,LOR2,Actual LOR2 South Australia Region - Saturday 7 June 2014
+2014-06-07 14:31:12,SA,LOR2,Actual LOR2 South Australia Region - Saturday 7 June 2014
+2014-06-15 06:20:02,SA,LOR2,Actual LOR2 South Australia Region - Sunday 15 June 2014
+2014-07-05 10:04:57,SA,LOR2,Actual LOR2 South Australia Region - Sat 05/07/2014
+2014-07-05 16:27:26,SA,LOR2,Actual LOR2 South Australia Region - Sat 05/07/2014
+2014-07-06 09:08:13,SA,LOR2,Actual LOR2 South Australia Region - Sun 06/07/2014
+2014-07-12 06:54:40,SA,LOR2,Actual LOR2 South Australia Region - Saturday 12/07/2014
+2014-07-21 18:37:23,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region - 21 July 2014
+2014-10-08 12:41:40,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 8 October 2014"
+2014-10-22 08:49:41,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 22 October 2014"
+2014-10-23 08:08:36,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 23 October 2014"
+2014-11-29 08:15:57,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 29 November 2014"
+2014-11-30 06:59:23,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 30 November 2014"
+2015-01-02 19:48:41,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA Region.
+2015-02-07 16:34:28,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 7 February 2015"
+2015-02-13 11:09:42,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 13 February 2015"
+2015-02-20 05:16:37,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 20 February 2015"
+2015-05-06 08:13:55,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 6 May 2015"
+2015-05-06 13:09:09,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 6 May 2015"
+2015-05-06 17:44:04,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 6 May 2015"
+2015-05-07 05:34:47,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 7 May 2015"
+2015-05-08 05:39:36,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 8 May 2015"
+2015-05-11 06:54:27,SA,LOR2,Actual LOR2 South Australia Region - Mon 11 May 2015
+2015-06-29 18:39:48,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region 29/06/15  
+2015-07-13 06:26:12,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 13 July 2015"
+2015-07-14 08:16:27,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 14 July 2015"
+2015-07-15 07:13:40,SA,LOR2,Actual LOR2 South Australia Region - 15/07/2015
+2015-07-16 06:33:27,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 16 July 2015"
+2015-07-17 06:01:35,SA,LOR2,"Actual LOR2 South Australia Region - Friday, 17 July 2015"
+2015-07-18 06:03:42,SA,LOR2,Actual LOR2 South Australia Region - Sat 18 July 2015
+2015-07-27 18:14:42,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region 27/07/15
+2015-07-28 08:07:51,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region - 28/07/15
+2015-07-28 18:14:39,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region - 28/07/15
+2015-08-04 14:08:25,SA,LOR2,Actual LOR2 South Australia Region - Tues 4 Aug 2015
+2015-08-04 16:15:28,SA,LOR2,Actual LOR2 South Australia Region - Tues 4 Aug 2015
+2015-08-06 13:23:19,SA,LOR2,Actual LOR2 South Australia Region - 6/08/15
+2015-08-11 14:14:32,SA,LOR2,"Actual LOR2 South Australia Region - Tuesday, 11 August 2015"
+2015-08-13 14:11:48,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 13 August 2015"
+2015-08-30 19:16:12,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region 30/08/15
+2015-08-30 19:44:04,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region 30/08/15
+2015-10-08 07:17:32,SA,LOR2,Actual LOR2 South Australia Region - Thurs 8 Oct 2015
+2015-10-11 11:23:29,SA,LOR2,Actual LOR2 South Australia Region - Sunday 11 Oct 2015
+2015-10-15 17:55:45,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 15 October 2015"
+2015-10-15 23:39:09,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 15 October 2015"
+2015-10-18 09:15:33,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 18 October 2015"
+2015-10-19 08:49:26,SA,LOR2,"Actual LOR2 South Australia Region - Monday, 19 October 2015"
+2015-10-20 04:56:10,SA,LOR2,Actual LOR2 South Australia Region -  20 October 2015
+2015-10-20 16:20:41,SA,LOR2,Actual LOR2 South Australia Region -  20 October 2015
+2015-10-21 11:34:19,SA,LOR2,Actual LOR2 South Australia Region -  21 October 2015
+2015-10-21 18:55:00,SA,LOR2,Actual LOR2 South Australia Region -  21 October 2015
+2015-10-22 05:31:52,SA,LOR2,Actual LOR2 South Australia Region -  22 October 2015
+2015-10-23 10:18:47,SA,LOR2,Actual LOR2 South Australia Region -  23 October 2015
+2015-10-24 08:14:08,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 24 October 2015"
+2015-10-24 12:43:21,SA,LOR2,"Actual LOR2 South Australia Region - Saturday, 24 October 2015"
+2015-10-25 19:03:48,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 25 October 2015"
+2015-10-29 00:50:13,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 29 October 2015"
+2015-10-29 07:11:39,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 29 October 2015"
+2015-11-01 19:22:53,SA,LOR2,"Actual LOR2 South Australia Region - Sunday, 1 November 2015"
+2015-11-05 21:07:58,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 5 November 2015"
+2015-11-07 06:13:38,SA,LOR2,Actual LOR2 South Australia Region - Sat 7th Nov 2015
+2015-11-10 09:52:23,SA,LOR2,Actual LOR2 South Australia Region - 10 November 2015
+2015-11-19 16:19:53,NSW,LOR1,Actual Lack of Reserve Level 1 (LOR1) in the NSW Region.
+2015-11-20 13:13:42,NSW,LOR1,Actual Lack of Reserve Level 1 (LOR1) in the NSW Region.
+2015-11-20 15:46:50,NSW,LOR2,Actual Lack of Reserve Level 2 (LOR2) in the NSW Region.
+2015-11-20 16:05:36,NSW,LOR2,Actual Lack of Reserve Level 2 (LOR2) in the NSW Region.
+2015-11-20 17:12:15,NSW,LOR1,Actual Lack of Reserve Level 1 (LOR1) in the NSW Region.
+2015-12-14 15:55:49,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region Region 14 December 2015
+2015-12-17 16:03:56,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region Region 17 December 2015
+2015-12-18 17:02:03,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region Region 18 December 2015
+2016-01-14 11:12:26,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.- 14/01/16
+2016-01-14 13:47:50,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region - 14/01/16 
+2016-07-06 18:15:46,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region - 06 July 2016
+2016-07-07 18:12:30,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region - 07 July 2016
+2016-07-08 18:35:57,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region - 08 July 2016
+2016-07-12 19:04:33,SA,LOR1,"Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region. Tuesday, 12 July 2016."
+2016-07-13 18:04:37,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region. 13/07/16
+2016-07-14 17:46:03,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region. 14/07/16
+2016-08-10 07:52:50,SA,LOR2,Actual LOR2 South Australia Region
+2016-08-10 16:30:44,SA,LOR2,Actual LOR2 South Australia Region
+2016-08-31 07:31:04,SA,LOR2,Actual LOR2 South Australia Region - 31 Aug 2016
+2016-09-01 07:16:31,SA,LOR2,Actual LOR2 South Australia Region - 01 Sept 2016
+2016-09-02 08:19:05,SA,LOR2,Actual LOR2 South Australia Region - 02 Sept 2016
+2016-09-06 07:19:00,SA,LOR2,Actual LOR2 South Australia Region - 06 Sept 2016
+2016-09-08 02:26:33,SA,LOR2,Actual LOR2 South Australia Region - 08 Sept 2016
+2016-09-09 07:08:57,SA,LOR2,Actual LOR2 South Australia Region - 09 Sept 2016
+2016-09-09 18:51:14,SA,LOR2,Actual LOR2 South Australia Region - 09 Sept 2016
+2016-09-13 08:46:34,SA,LOR2,Actual LOR2 South Australia Region - 13 Sept 16
+2016-09-16 07:14:30,SA,LOR2,Actual LOR2 South Australia Region - 16 Sept 16
+2016-10-18 08:48:37,SA,LOR2,Actual LOR2 South Australia Region - 18 October 2016
+2016-10-18 17:51:15,SA,LOR2,Actual LOR2 South Australia Region - 18 October 2016
+2016-10-20 20:59:40,SA,LOR2,"Actual LOR2 South Australia Region - Thursday, 20 October 2016"
+2016-11-08 06:28:49,SA,LOR2,Actual LOR2 South Australia Region - 8/11/2016
+2016-11-22 07:23:33,SA,LOR2,Actual LOR2 South Australia Region - 22 Nov 2016
+2016-11-30 07:48:43,SA,LOR2,Actual LOR2 South Australia Region - 30/11/16
+2016-12-14 06:31:17,SA,LOR2,"Actual LOR2 South Australia Region - Wednesday, 14 December 2016"
+2016-12-22 06:08:22,SA,LOR2,Actual LOR2 South Australia Region - 22/12/2016
+2016-12-23 07:26:01,SA,LOR2,Actual LOR2 South Australia Region - 23/12/2016
+2017-01-23 05:53:13,SA,LOR2,Actual LOR2 South Australia Region - 23/1/2017
+2017-02-06 13:46:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.
+2017-02-08 16:13:52,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region.
+2017-02-08 17:13:08,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the South Australia Region 
+2017-02-08 18:11:12,SA,LOR3,"Actual Lack Of Reserve Level 3 (LOR3) in the South Australia Region - Wednesday, 8 February 2017."
+2017-02-08 20:01:01,SA,LOR2,"Actual Lack Of Reserve Level 2 (LOR2) in the South Australia Region Wednesday, 8 February 2017"
+2017-02-08 20:18:09,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region.
+2017-02-09 14:39:54,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region- 9/02/17
+2017-02-09 19:20:35,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region. PD PASA.
+2017-02-10 13:00:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region- 10-02-2017
+2017-02-10 16:44:29,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region - 10-02-2017
+2017-02-10 17:20:49,NSW,LOR3,Actual Lack Of Reserve Level 3 (LOR3) in the NSW Region- 10-02-2017
+2017-02-10 18:38:15,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region - 10-02-2017
+2017-02-11 12:19:31,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region - 11-02-2017
+2017-02-12 16:16:07,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Qld Region - 12/02/17
+2017-02-12 17:08:29,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Qld Region - 12/02/17
+2017-02-27 05:14:58,SA,LOR2,Actual LOR2 South Australia Region - 23/1/2017
+2017-02-28 15:34:50,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region.- 28/02/17
+2017-03-01 15:35:50,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region.- 01/03/17
+2017-03-03 16:15:57,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA Region - 03/03/17 
+2017-03-20 13:00:22,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the South Australia Region.- 20/03/2017
+2017-11-21 16:21:26,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic Region.- 21/11/2017
+2017-11-29 16:55:05,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic Region.- 29/11/2017
+2017-12-14 16:07:29,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.- 14/12/2017
+2018-01-18 16:05:50,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region - 18/01/2018
+2018-01-18 17:05:48,VIC,LOR2,"Actual Lack Of Reserve Level 2 (LOR2) in the VIC Region - Thursday, 18 January 2018"
+2018-01-19 14:02:23,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region - 19/01/2018
+2018-02-07 15:54:59,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region- 7/02/2018
+2018-02-07 17:16:42,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region.- 7/02/2018
+2018-02-14 16:07:39,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region.- 14/02/2018
+2018-04-10 17:48:29,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region.- 10/04/2018
+2018-04-19 17:57:40,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.- 19/04/18
+2018-06-04 17:34:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 04/06/2018
+2018-06-05 16:26:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 05/06/2018
+2018-06-05 18:27:48,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region - 5/06/2018 
+2018-06-05 18:34:56,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/06/2018
+2018-06-06 17:12:04,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 06/06/2018
+2018-06-07 17:11:30,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 07/06/2018
+2018-06-07 17:47:51,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region - 7/06/2018
+2018-06-08 16:36:49,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 08/06/2018
+2018-06-08 17:44:18,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region - 08/06/2018
+2018-06-09 17:08:10,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 09/06/2018
+2018-08-21 08:10:04,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 21/08/2018
+2018-08-27 17:36:10,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.- 27/08/2018
+2018-08-28 18:43:30,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region.- 28/08/2018
+2018-09-03 18:11:21,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/09/2018
+2018-11-06 16:41:04,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 06/11/2018
+2019-01-17 15:49:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 17/01/2019
+2019-01-24 15:21:33,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC region - 24/01/2019
+2019-01-24 16:22:32,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the VIC region - 24/01/2019
+2019-01-24 18:06:58,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA region - 24/01/2019
+2019-01-24 18:14:44,VIC,LOR3,Actual Lack Of Reserve Level 3 (LOR3) in the Vic region - 24/01/2019
+2019-01-25 08:21:03,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC region - 25/01/2019
+2019-01-25 09:50:50,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Vic region - 25/01/2019
+2019-01-25 11:04:54,VIC,LOR3,Actual Lack Of Reserve Level 3 (LOR3) in the Vic region - 25/01/2019
+2019-01-30 14:16:38,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic region - 30/01/2019
+2019-01-31 15:04:12,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region
+2019-03-01 16:41:13,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic region - 01/03/2019
+2019-10-31 14:43:33,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 31/10/2019
+2019-12-06 17:16:24,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Qld region - 06/12/2019
+2019-12-20 17:19:14,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Vic region - 20/12/2019
+2019-12-27 19:17:34,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 27/12/2019
+2019-12-30 16:27:49,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC region - 30/12/2019
+2020-01-04 16:05:21,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 04/01/2020
+2020-01-22 16:03:19,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 22/01/2020
+2020-01-23 13:34:03,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 23/01/2020
+2020-01-23 14:37:41,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 23/01/2020
+2020-01-28 16:44:04,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 28/01/2020
+2020-01-30 17:12:18,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Vic region - 30/01/2020
+2020-01-30 18:32:10,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the VIC region - 30/01/2020
+2020-01-30 18:32:31,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA region - 30/01/2020
+2020-01-31 14:16:13,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the VIC region - 31/01/2020
+2020-01-31 15:01:50,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 31/01/2020
+2020-02-01 13:50:57,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/02/2020
+2020-02-01 17:03:16,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 01/02/2020
+2020-08-04 08:49:53,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Tasmania region - 04/08/2020
+2020-08-10 08:00:09,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Tasmania region - 10/08/2020
+2020-08-11 07:39:44,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Tasmania region - 11/08/2020
+2020-08-25 18:09:22,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 25/08/2020
+2020-08-26 18:38:21,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 26/08/2020
+2020-10-12 17:52:22,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 12/10/2020
+2020-10-23 16:27:50,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 23/10/2020
+2020-10-26 17:41:06,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 26/10/2020
+2020-11-16 15:26:58,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/11/2020
+2020-11-28 17:01:48,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 28/11/2020
+2020-11-29 16:59:41,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/11/2020
+2020-12-01 17:32:46,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/12/2020
+2020-12-10 13:52:09,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 10/12/2020
+2020-12-10 22:44:57,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 10/12/2020
+2020-12-10 22:49:27,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 10/12/2020
+2020-12-11 07:18:00,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 11/12/2020
+2020-12-11 08:21:46,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 11/12/2020
+2020-12-17 14:35:21,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 17/12/2020
+2020-12-17 17:19:09,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 17/12/2020
+2020-12-18 09:08:00,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region -18/12/2020
+2020-12-18 14:38:36,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region -18/12/2020
+2021-01-14 16:50:21,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/01/2021
+2021-01-24 17:44:05,,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA  region - 24 Jan 2021
+2021-03-12 18:45:25,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 12/03/2021
+2021-03-12 19:47:00,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA region - 12/03/2021
+2021-04-19 18:13:35,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 19/04/2021
+2021-04-21 07:44:11,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Victoria region - 21/04/2021
+2021-04-21 18:14:59,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Victoria region - 21/04/2021
+2021-04-26 18:14:13,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 26/04/2021
+2021-05-03 17:17:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/05/2021
+2021-05-19 08:05:25,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 19/05/2021
+2021-05-19 18:39:59,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 19/05/2021
+2021-05-20 07:14:19,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 20/05/2021
+2021-05-21 16:40:04,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 21/05/2021
+2021-05-21 17:11:33,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 21/05/2021
+2021-05-25 16:44:10,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Qld region - 25/05/2021
+2021-05-25 18:13:23,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 25/05/2021
+2021-05-26 17:36:15,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 26/05/2021
+2021-05-29 17:41:32,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/05/2021
+2021-05-29 21:09:05,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/05/2021
+2021-05-30 17:16:28,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 30/05/2021
+2021-05-31 17:38:47,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 31/05/2021
+2021-05-31 17:44:26,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 31/05/2021
+2021-06-01 07:38:57,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/06/2021
+2021-06-01 17:44:11,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/06/2021
+2021-06-03 07:42:54,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/06/2021
+2021-06-03 09:08:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/06/2021
+2021-06-03 16:49:11,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/06/2021
+2021-06-03 17:44:31,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 03/06/2021
+2021-06-10 16:46:50,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 10/06/2021
+2021-06-10 18:12:27,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 10/06/2021
+2021-06-14 17:38:12,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 14/06/2021
+2021-06-16 07:46:10,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/06/2021
+2021-06-16 17:14:05,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/06/2021
+2021-06-22 17:38:51,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 22/06/2021
+2021-06-23 17:14:02,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 23/06/2021
+2021-06-29 17:43:08,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/06/2021
+2021-07-01 17:45:31,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/07/2021
+2021-07-05 17:47:11,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 05/07/2021
+2021-07-06 17:44:39,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 06/07/2021
+2021-07-06 18:09:34,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 06/07/2021
+2021-07-06 18:24:56,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 06/07/2021
+2021-07-07 17:40:16,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 07/07/2021
+2021-07-12 17:17:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 12/07/2021
+2021-07-12 17:28:49,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 12/07/2021
+2021-07-14 08:12:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/07/2021
+2021-07-14 12:53:35,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/07/2021
+2021-07-14 17:38:16,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/07/2021
+2021-07-14 17:50:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/07/2021
+2021-07-19 08:12:16,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 19/07/2021
+2021-07-21 17:46:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 21/07/2021
+2021-07-21 17:53:17,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Qld region - 21/07/2021
+2021-07-21 18:14:04,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the Qld region - 21/07/2021
+2021-07-21 19:22:39,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 21/07/2021
+2021-07-22 09:14:10,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 22/07/2021
+2021-07-22 16:49:32,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 22/07/2021
+2021-07-22 17:15:56,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 22/07/2021
+2021-07-26 18:18:44,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Qld region - 26/07/2021
+2021-08-30 18:14:13,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the Qld region - 30/07/2021
+2021-10-14 17:41:32,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 14/10/2021
+2021-10-30 17:49:19,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 30/10/2021
+2021-12-09 17:19:20,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 09/12/2021
+2021-12-20 17:49:00,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 20/12/2021
+2022-01-17 17:45:45,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region - 17/01/2022
+2022-01-31 18:46:02,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region - 31/01/2022
+2022-02-01 15:30:09,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 01/02/2022
+2022-02-01 16:52:53,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/02/2022
+2022-02-01 17:38:32,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 01/02/2022
+2022-02-02 15:00:38,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 01/02/2022
+2022-02-17 15:51:24,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 17/02/2022
+2022-02-21 15:54:41,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 21/02/2022
+2022-03-08 17:14:24,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 08/03/2022
+2022-03-08 17:43:22,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 08/03/2022
+2022-03-09 17:48:55,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 09/03/2022
+2022-03-31 18:20:16,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 31/03/2022
+2022-04-05 17:47:10,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/04/2022
+2022-05-03 17:48:01,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 03/05/2022
+2022-05-04 17:42:57,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 04/05/2022
+2022-05-06 17:17:33,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 06/05/2022
+2022-05-07 17:52:35,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 07/05/2022
+2022-05-09 17:19:04,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 09/05/2022
+2022-05-10 17:49:32,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 10/05/2022
+2022-05-11 08:15:44,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 11/05/2022
+2022-05-16 17:35:05,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 16/05/2022
+2022-05-30 08:43:15,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the TAS Region on 30/05/2022
+2022-05-31 17:20:05,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 31/05/2022
+2022-06-05 18:24:59,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 05/06/2022
+2022-06-06 08:16:31,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 06/06/2022
+2022-06-08 18:20:57,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 08/06/2022
+2022-06-09 17:52:54,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 09/06/2022
+2022-06-10 08:46:06,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 10/06/2022
+2022-06-10 18:21:22,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 10/06/2022
+2022-06-10 19:16:49,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 10/06/2022
+2022-06-12 17:54:09,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 12/06/2022
+2022-06-12 20:50:32,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 12/06/2022
+2022-06-12 22:18:48,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 12/06/2022
+2022-06-13 05:46:04,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/06/2022
+2022-06-13 06:20:29,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 13/06/2022
+2022-06-13 16:51:07,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 13/06/2022
+2022-06-13 17:21:28,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 13/06/2022
+2022-06-13 17:24:41,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 13/06/2022
+2022-06-13 17:50:54,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 13/06/2022
+2022-06-13 23:27:12,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region beginning on 13/06/2022
+2022-06-13 23:39:06,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region beginning on 13/06/2022
+2022-06-14 04:38:49,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 14/06/2022
+2022-06-14 07:36:18,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 14/06/2022
+2022-06-14 11:25:41,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/06/2022
+2022-06-14 19:30:32,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 14/06/2022
+2022-06-15 12:33:53,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the VIC Region beginning on 15/06/2022
+2022-06-15 19:07:56,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 15/06/2022
+2022-06-16 06:38:40,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 16/06/2022
+2022-06-16 08:13:27,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 16/06/2022
+2022-06-16 20:52:25,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 16/06/2022
+2022-06-17 15:24:50,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 17/06/2022
+2022-06-17 18:06:22,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 17/06/2022
+2022-06-17 21:18:23,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 17/06/2022
+2022-06-18 06:29:39,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 18/06/2022
+2022-06-20 20:40:58,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 20/06/2022
+2022-06-21 07:08:35,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 21/06/2022
+2022-06-21 08:07:40,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 21/06/2022
+2022-06-21 08:19:08,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA Region on 21/06/2022
+2022-06-21 17:59:36,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region on 21/06/2022
+2022-06-21 18:35:52,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 21/06/2022
+2022-06-22 04:36:26,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 22/06/2022
+2022-06-22 07:32:43,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC region - 22/06/2022
+2022-06-22 07:34:58,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 22/06/2022
+2022-06-22 07:37:38,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 22/06/2022
+2022-06-22 14:51:09,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region on 22/06/2022
+2022-06-22 17:56:19,VIC,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the VIC region - 22/06/2022
+2022-06-22 17:57:18,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 22/06/2022
+2022-06-22 18:02:44,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 22/06/2022
+2022-06-22 18:04:11,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 22/06/2022
+2022-06-22 18:28:39,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 22/06/2022
+2022-07-04 16:55:17,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 04/07/2022
+2022-07-04 21:00:56,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 04/07/2022
+2022-07-05 08:18:51,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/07/2022
+2022-07-05 08:49:26,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 05/07/2022
+2022-07-05 15:06:08,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/07/2022
+2022-07-05 17:46:24,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 05/07/2022
+2022-07-05 17:47:31,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/07/2022
+2022-07-06 12:49:06,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 06/07/2022
+2022-07-06 17:51:47,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 06/07/2022
+2022-07-06 17:52:40,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 06/07/2022
+2022-07-07 06:49:35,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 07/07/2022
+2022-07-07 17:49:04,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 07/07/2022
+2022-07-08 07:31:53,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 08/07/2022
+2022-07-08 17:24:08,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 08/07/2022
+2022-07-09 08:29:42,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 09/07/2022
+2022-07-11 17:25:02,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 11/07/2022
+2022-07-11 17:49:37,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 11/07/2022
+2022-07-12 17:50:13,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 12/07/2022
+2022-07-12 18:06:11,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 12/07/2022
+2022-07-13 06:46:12,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/07/2022
+2022-07-13 17:49:59,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/07/2022
+2022-07-14 17:47:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 14/07/2022
+2022-07-15 06:42:27,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 15/07/2022
+2022-07-15 17:49:01,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 15/07/2022
+2022-07-18 18:34:53,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 18/07/2022
+2022-07-20 17:54:13,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 20/07/2022
+2022-07-21 17:53:05,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 21/07/2022
+2022-08-03 17:43:17,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 03/08/2022
+2022-08-08 18:24:19,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 08/08/2022
+2022-08-09 08:46:27,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the TAS Region on 09/08/2022
+2022-08-12 05:24:18,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 12/08/2022
+2022-08-13 06:20:05,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/08/2022
+2022-08-13 08:43:38,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/08/2022
+2022-08-13 16:49:29,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/08/2022
+2022-08-15 17:49:12,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 15/08/2022
+2022-08-16 06:46:16,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 16/08/2022
+2022-08-16 17:47:25,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 16/08/2022
+2022-08-16 19:45:58,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 16/08/2022
+2022-08-18 06:51:42,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 18/08/2022
+2022-08-20 19:09:05,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 20/08/2022
+2022-08-29 07:19:45,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 29/08/2022
+2022-09-05 18:20:06,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 05/09/2022
+2022-09-06 17:28:18,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 06/09/2022
+2022-09-08 00:47:29,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 08/09/2022
+2022-09-10 18:54:22,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 10/09/2022
+2022-09-11 18:08:55,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 11/09/2022
+2022-09-11 19:19:21,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 11/09/2022
+2022-09-12 07:24:26,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 12/09/2022
+2022-09-12 17:49:33,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 12/09/2022
+2022-09-12 19:30:22,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 12/09/2022
+2022-09-14 17:55:29,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 14/09/2022
+2022-09-20 22:29:59,SA,LOR1,Actual Lack of Reserve Level 1 (LOR1) in the SA region - 20/09/2022
+2022-09-22 18:45:46,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 22/09/2022
+2022-10-05 09:42:40,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 05/10/2022
+2022-11-21 18:23:44,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 21/11/2022
+2022-12-05 17:22:31,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 05/12/2022
+2023-01-09 18:55:48,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 09/01/2023
+2023-01-26 18:21:23,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 26/01/2023
+2023-01-29 14:45:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 29/01/2023
+2023-01-29 19:21:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 29/01/2023
+2023-01-31 17:52:36,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 31/01/2023
+2023-01-31 19:16:51,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 31/01/2023
+2023-01-31 19:48:07,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 31/01/2023
+2023-02-01 18:49:02,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 01/02/2023
+2023-02-02 17:20:35,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 02/02/2023
+2023-02-03 16:20:24,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region on 03/02/2023
+2023-02-03 18:21:59,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 03/02/2023
+2023-02-09 19:26:07,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 09/02/2023
+2023-02-11 18:22:16,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 11/02/2023
+2023-02-12 18:44:59,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 12/02/2023
+2023-02-13 18:40:42,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 13/02/2023
+2023-02-16 18:26:15,VIC,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the VIC Region on 16/02/2023
+2023-02-16 19:20:12,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 16/02/2023
+2023-02-23 18:49:17,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 23/02/2023
+2023-03-06 16:23:20,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 06/03/2023
+2023-03-06 17:31:44,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 06/03/2023
+2023-03-16 16:34:49,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/03/2023
+2023-03-16 17:54:35,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 16/03/2023
+2023-03-16 17:56:25,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD Region on 16/03/2023
+2023-03-16 18:56:57,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 16/03/2023
+2023-03-17 17:54:06,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 17/03/2023
+2023-03-17 17:54:46,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 17/03/2023
+2023-03-18 17:52:56,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 18/03/2023
+2023-03-19 17:21:15,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 19/03/2023
+2023-03-27 18:22:49,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 27/03/2023
+2023-03-28 18:46:48,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 28/03/2023
+2023-04-11 17:54:02,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 11/04/2023
+2023-04-12 17:48:23,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 12/04/2023
+2023-04-16 17:53:19,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 16/04/2023
+2023-04-17 17:24:16,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 17/04/2023
+2023-05-04 17:55:30,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 04/05/2023
+2023-05-05 18:19:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 05/05/2023
+2023-05-06 17:50:38,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 06/05/2023
+2023-05-07 17:50:03,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 07/05/2023
+2023-05-08 18:20:33,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 08/05/2023
+2023-05-17 18:20:59,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 17/05/2023
+2023-05-22 18:32:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 22/05/2023
+2023-05-23 07:15:52,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 23/05/2023
+2023-05-23 17:22:46,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 23/05/2023
+2023-05-24 06:49:23,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 24/05/2023
+2023-05-24 17:21:37,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 24/05/2023
+2023-05-25 07:20:51,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 25/05/2023
+2023-05-25 16:53:36,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 25/05/2023
+2023-05-25 17:58:41,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 25/05/2023
+2023-05-25 20:19:28,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW Region on 25/05/2023
+2023-05-26 17:51:09,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 26/05/2023
+2023-05-27 17:50:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 27/05/2023
+2023-05-30 17:55:12,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 30/05/2023
+2023-05-30 17:56:03,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 30/05/2023
+2023-06-20 17:54:53,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 20/06/2023
+2023-06-21 17:49:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 21/06/2023
+2023-06-26 19:20:37,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 26/06/2023
+2023-07-17 19:44:39,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA Region on 17/07/2023
+2023-07-19 17:53:40,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 19/07/2023
+2023-07-20 17:50:38,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 20/07/2023
+2023-08-01 07:40:55,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 01/08/2023
+2023-08-02 17:20:52,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 02/08/2023
+2023-09-04 17:47:18,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 04/09/2023
+2023-10-17 10:22:10,TAS,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the TAS region - 17/10/2023
+2023-10-27 19:18:44,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 27/10/2023
+2023-10-27 19:49:02,SA,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the SA region - 27/10/2023
+2023-11-08 17:54:14,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 08/11/2023
+2023-11-12 18:00:23,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 12/11/2023
+2023-11-14 17:07:19,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/11/2023
+2023-11-15 17:02:53,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 15/11/2023
+2023-11-16 16:51:42,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/11/2023
+2023-11-16 18:24:08,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 16/11/2023
+2023-11-21 17:56:14,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 21/11/2023
+2023-12-02 18:20:45,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 02/12/2023
+2023-12-05 18:21:33,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 05/12/2023
+2023-12-09 17:16:02,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 09/12/2023
+2023-12-14 16:50:22,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/12/2023
+2023-12-14 18:00:52,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 14/12/2023
+2024-01-18 15:46:27,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 18/01/2024
+2024-01-19 17:44:26,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 19/01/2024
+2024-01-21 18:12:48,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 21/01/2024
+2024-01-21 18:13:53,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 21/01/2024
+2024-01-22 18:42:10,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 22/01/2024
+2024-01-27 18:27:46,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 27/01/2024
+2024-01-29 18:12:37,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 29/01/2024
+2024-02-06 18:08:41,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 06/02/2024
+2024-02-13 14:27:41,VIC,LOR3,Actual Lack Of Reserve Level 3 (LOR3) in the VIC region - 13/02/2024
+2024-02-21 18:47:19,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 21/02/2024
+2024-02-23 16:12:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 23/02/2024
+2024-02-26 17:43:39,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 26/02/2024
+2024-02-29 15:12:55,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/02/2024
+2024-02-29 16:26:50,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/02/2024
+2024-03-11 18:42:56,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 11/03/2024
+2024-05-02 17:16:09,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 02/05/2024
+2024-05-07 17:46:36,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 07/05/2024
+2024-05-08 17:45:01,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 08/05/2024
+2024-05-09 17:13:13,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 09/05/2024
+2024-05-14 17:43:15,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD Region on 14/05/2024
+2024-05-18 17:58:11,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 18/05/2024
+2024-05-20 17:17:20,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 20/05/2024
+2024-06-15 17:14:10,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 15/06/2024
+2024-06-20 18:13:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 20/06/2024
+2024-07-03 17:42:34,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 03/07/2024
+2024-07-30 20:17:01,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 30/07/2024
+2024-08-05 20:44:48,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 05/08/2024
+2024-09-16 18:16:31,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/09/2024
+2024-09-24 23:13:14,SA,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the SA region - 24/09/2024
+2024-09-26 16:41:23,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 26/09/2024
+2024-10-17 18:19:52,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 17/10/2024
+2024-10-31 18:22:56,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 31/10/2024
+2024-11-04 18:18:07,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 04/11/2024
+2024-11-07 17:45:33,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 07/11/2024
+2024-11-07 17:47:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 07/11/2024
+2024-11-22 18:12:08,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 22/11/2024
+2024-11-24 18:17:52,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 24/11/2024
+2024-11-26 16:56:18,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 26/11/2024
+2024-11-27 14:48:34,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 27/11/2024
+2024-11-27 15:48:50,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 27/11/2024
+2024-11-29 16:54:05,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/11/2024
+2024-11-29 17:43:53,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 29/11/2024
+2024-12-02 17:16:49,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 02/12/2024
+2024-12-06 14:57:52,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 06/12/2024
+2024-12-12 19:17:45,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW Region on 12/12/2024
+2024-12-13 18:21:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 13/12/2024
+2024-12-16 17:21:43,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 16/12/2024
+2024-12-17 15:44:28,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 17/12/2024
+2025-01-13 16:58:29,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 13/01/2025
+2025-01-13 17:49:35,NSW,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the NSW region - 13/01/2025
+2025-01-14 17:43:20,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 14/01/2025
+2025-01-15 14:55:49,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 15/01/2025
+2025-01-15 16:51:48,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 15/01/2025
+2025-01-22 17:47:39,QLD,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the QLD region - 22/01/2025
+2025-01-22 18:43:09,QLD,LOR2,Actual Lack Of Reserve Level 2 (LOR2) in the QLD region - 22/01/2025
+2025-02-04 17:46:30,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 04/02/2025
+2025-02-05 14:04:22,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 05/02/2025
+2025-02-05 17:52:02,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 05/02/2025
+2025-02-06 18:17:14,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 06/02/2025
+2025-02-07 17:21:00,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 07/02/2025
+2025-02-09 16:44:17,NSW,LOR1,Actual Lack Of Reserve Level 1 (LOR1) in the NSW region - 09/02/2025
