@@ -1,0 +1,11 @@
+distribution_zone,controlled_load,dmo_price,dmo_kw,cl_kw,cl1_usage,cl2_usage
+Ausgrid,False,"$1,827","3,911",,,
+Ausgrid,True,"$2,562","4,813","2,005",.67,.33
+Endeavour,False,"$2,228","4,913",,,
+Endeavour,True,"$2,977","5,214","2,206",.67,.33
+Essential Energy,False,"$2,527","4,613",,,
+Essential Energy,True,"$2,977","4,613","2,005",.29,.71
+Energex,False,"$1,969","4,613",,,
+Energex,True,"$2,363","4,412","1,905",.77,.23
+SA Power Networks,False,"$2,279","4,011",,,
+SA Power Networks,True,"$2,787","4,212","1,805",,
