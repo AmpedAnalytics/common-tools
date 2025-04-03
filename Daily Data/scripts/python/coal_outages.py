@@ -45,36 +45,36 @@ def get_coal_outages():
     # ! test a different day !
     # today = test_date
 
-    # mtpasa = get_coal_availability(
-    #     coal_duids,
-    #     today + pd.DateOffset(days=1)
-    # )
+    mtpasa = get_coal_availability(
+        coal_duids,
+        today + pd.DateOffset(days=1)
+    )
 
-    # mtpasa['DAY'] = pd.to_datetime(mtpasa['DAY'])
+    mtpasa['DAY'] = pd.to_datetime(mtpasa['DAY'])
 
-    # outage_data = get_outage_data(
-    #     coal_duids,
-    #     today
-    # )
+    outage_data = get_outage_data(
+        coal_duids,
+        today
+    )
 
-    # historic_outages = get_historic_outages(
-    #     today,
-    #     lookback=15 # can change duration looking backwards
-    # )
+    historic_outages = get_historic_outages(
+        today,
+        lookback=15 # can change duration looking backwards
+    )
 
-    # mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"),index=False)
-    # outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
-    # historic_outages.to_csv(os.path.join(data_path,"historic_outage_example.csv"),index=False)
+    mtpasa.to_csv(os.path.join(data_path,"mtpasa_example.csv"),index=False)
+    outage_data.to_csv(os.path.join(data_path,"outage_example.csv"))
+    historic_outages.to_csv(os.path.join(data_path,"historic_outage_example.csv"),index=False)
 
     # ### DEBGUG START
     
     # Comment above and uncomment below for debugging
 
-    mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),parse_dates=['DAY'])
-    outage_data = pd.read_csv(os.path.join(data_path,"outage_example.csv"),index_col=0,parse_dates=[
-                  'outage_start','outage_end','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
-    historic_outages = pd.read_csv(os.path.join(data_path,"historic_outage_example.csv"),parse_dates=[
-                  'outage_date','expected_return'])
+    # mtpasa = pd.read_csv(os.path.join(data_path,"mtpasa_example.csv"),parse_dates=['DAY'])
+    # outage_data = pd.read_csv(os.path.join(data_path,"outage_example.csv"),index_col=0,parse_dates=[
+    #               'outage_start','outage_end','bidofferdate','bidsettlementdate','expected_return','latest_offer_datetime'])
+    # historic_outages = pd.read_csv(os.path.join(data_path,"historic_outage_example.csv"),parse_dates=[
+    #               'outage_date','expected_return'])
     
     ### DEBUG END
 
@@ -354,7 +354,6 @@ def get_coal_outages():
 
     return all_outages.copy()
 
-all_out = get_coal_outages()
 
 def visualise_outages(df,today=test_date):
     plt.rcParams["font.family"] = "Times New Roman"
@@ -543,4 +542,7 @@ def visualise_outages(df,today=test_date):
     # plt.subplots_adjust(left=0.11) 
     plt.savefig(f"./outage_{today}.png",dpi=200)
 
-visualise_outages(all_out)
+
+if __name__ == "__main__":
+    all_out = get_coal_outages()
+    visualise_outages(all_out)
